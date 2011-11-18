@@ -18,8 +18,8 @@
 		0841158C1475CE68000A21FD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0841158B1475CE68000A21FD /* ViewController.xib */; };
 		084115A71475D4CD000A21FD /* ViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084115A61475D4CD000A21FD /* ViewController-iPad.xib */; };
 		084115B01475D614000A21FD /* Untitled-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 084115AF1475D614000A21FD /* Untitled-iPad.png */; };
-		084115B21475D657000A21FD /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 084115B11475D657000A21FD /* Untitled.png */; };
 		084115B61475D6D0000A21FD /* Untitled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 084115B51475D6CF000A21FD /* Untitled@2x.png */; };
+		08FAA57B1475DF1F00738A28 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FAA57A1475DF1F00738A28 /* Untitled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +41,8 @@
 		0841158B1475CE68000A21FD /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		084115A61475D4CD000A21FD /* ViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController-iPad.xib"; sourceTree = "<group>"; };
 		084115AF1475D614000A21FD /* Untitled-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled-iPad.png"; sourceTree = "<group>"; };
-		084115B11475D657000A21FD /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = gestureRecognitionTemplate/Images/Untitled.png; sourceTree = "<group>"; };
 		084115B51475D6CF000A21FD /* Untitled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled@2x.png"; sourceTree = "<group>"; };
+		08FAA57A1475DF1F00738A28 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 		084115AC1475D5E5000A21FD /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				084115B11475D657000A21FD /* Untitled.png */,
+				08FAA57A1475DF1F00738A28 /* Untitled.png */,
 				084115B51475D6CF000A21FD /* Untitled@2x.png */,
 				084115AF1475D614000A21FD /* Untitled-iPad.png */,
 			);
@@ -195,8 +195,8 @@
 				0841158C1475CE68000A21FD /* ViewController.xib in Resources */,
 				084115A71475D4CD000A21FD /* ViewController-iPad.xib in Resources */,
 				084115B01475D614000A21FD /* Untitled-iPad.png in Resources */,
-				084115B21475D657000A21FD /* Untitled.png in Resources */,
 				084115B61475D6D0000A21FD /* Untitled@2x.png in Resources */,
+				08FAA57B1475DF1F00738A28 /* Untitled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +320,7 @@
 				0841155C1475489C000A21FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
