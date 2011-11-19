@@ -1,0 +1,15 @@
+- 17 Novembre:
+	
+	- RDV avec Robin Vivian, discussion du projet, mise en place de RDV futures, 
+	- Première tâche: Reconnaissance du mouvement de spirale.
+	
+- 18 Novembre:
+	
+	- Création d'un projet Universal, pour un dev iPhone/iPad simultané.
+	- Les doigts sont reconnus au pixel près, le nombre de doigt aussi.
+	
+- 19 Novembre:
+
+	- Mise en place d'un Git Repo pour faciliter l'échange de code et le travail simultané.
+	
+	
