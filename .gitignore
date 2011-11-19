@@ -4,3 +4,7 @@ gestureRecognition/gestureRecognition.xcodeproj/project.xcworkspace
 gestureRecognition/gestureRecognition.xcodeproj/project.xcworkspace/xcuserdata/dorianbauer.xcuserdatad/UserInterfaceState.xcuserstate
 
 .gitignore
+
+gestureRecognition/gestureRecognition.xcodeproj/xcuserdata/dorianbauer.xcuserdatad/xcschemes/xcschememanagement.plist
+
+gestureRecognition/gestureRecognition.xcodeproj/xcuserdata/dorianbauer.xcuserdatad/xcschemes/gestureRecognition.xcscheme
