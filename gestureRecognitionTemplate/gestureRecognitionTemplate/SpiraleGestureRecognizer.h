@@ -12,9 +12,8 @@
 @interface SpiraleGestureRecognizer : UIGestureRecognizer
 {
 
-    ViewController *_vc;
 }
-@property(nonatomic, retain) ViewController *vc;
+@property(nonatomic, strong) ViewController *vc;
 
 - (void)reset;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
