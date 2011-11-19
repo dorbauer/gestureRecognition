@@ -13,7 +13,8 @@
 {
 
 }
-@property(nonatomic, strong) ViewController *vc;
+@property(nonatomic,strong) ViewController *vc;
+@property(nonatomic) UIMouvementDirection lastKnownMouvementDirection;
 
 - (void)reset;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;

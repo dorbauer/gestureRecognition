@@ -11,6 +11,11 @@
 
 @interface ViewController : UIViewController
 
+- (void)cleanScreen;
+
+- (void)drawPointOnScreen:(CGPoint)pointToDraw;
+
 - (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UISpiraleOrientation)orientation;
+
 
 @end
