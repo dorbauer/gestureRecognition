@@ -10,7 +10,7 @@
 
 @interface SpiraleGestureRecognizer() {
 @private
-
+    
     UIQuarterCirclePattern _lastDetectedPattern;
 }
 @property(nonatomic,strong) NSMutableArray *touchedPoints;
@@ -208,9 +208,15 @@
     self.lastKnownMouvementDirection = UIMouvementDirectionNoDirection;
 }
 
-- (void)reset{}
+- (void)reset{
 
-#pragma Mark - Helper Methods
+#ifdef DEBUG
+    NSLog(@"Reset");
+#endif
+    
+}
+
+#pragma Mark -Helper Methods
 
 
 @end
