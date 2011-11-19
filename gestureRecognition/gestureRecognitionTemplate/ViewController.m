@@ -19,8 +19,7 @@
 
 #pragma mark - Gesture Recognition
 
-- (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer{
-
+- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UISpiraleOrientation)orientation{
 
 }
 
