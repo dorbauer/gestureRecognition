@@ -23,14 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0841153C1475489C000A21FD /* gestureRecognitionTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestureRecognitionTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0841153C1475489C000A21FD /* gestureRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestureRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084115401475489C000A21FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		084115421475489C000A21FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		084115441475489C000A21FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		084115481475489C000A21FD /* gestureRecognitionTemplate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gestureRecognitionTemplate-Info.plist"; sourceTree = "<group>"; };
+		084115481475489C000A21FD /* gestureRecognition-Info.plist */ = {isa = PBXFileReference; path = "gestureRecognition-Info.plist"; sourceTree = "<group>"; };
 		0841154A1475489C000A21FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0841154C1475489C000A21FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0841154E1475489C000A21FD /* gestureRecognitionTemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gestureRecognitionTemplate-Prefix.pch"; sourceTree = "<group>"; };
+		0841154E1475489C000A21FD /* gestureRecognition-Prefix.pch */ = {isa = PBXFileReference; path = "gestureRecognition-Prefix.pch"; sourceTree = "<group>"; };
 		0841154F1475489C000A21FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		084115501475489C000A21FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		084115521475489C000A21FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				084115AC1475D5E5000A21FD /* Images */,
-				084115461475489C000A21FD /* gestureRecognitionTemplate */,
+				084115461475489C000A21FD /* gestureRecognition */,
 				0841153F1475489C000A21FD /* Frameworks */,
 				0841153D1475489C000A21FD /* Products */,
 			);
@@ -72,7 +72,7 @@
 		0841153D1475489C000A21FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0841153C1475489C000A21FD /* gestureRecognitionTemplate.app */,
+				0841153C1475489C000A21FD /* gestureRecognition.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		084115461475489C000A21FD /* gestureRecognitionTemplate */ = {
+		084115461475489C000A21FD /* gestureRecognition */ = {
 			isa = PBXGroup;
 			children = (
 				084115671475B79D000A21FD /* gestureRecognitionCommons.h */,
@@ -97,16 +97,17 @@
 				084115501475489C000A21FD /* AppDelegate.m */,
 				084115471475489C000A21FD /* Supporting Files */,
 			);
+			name = gestureRecognition;
 			path = gestureRecognitionTemplate;
 			sourceTree = "<group>";
 		};
 		084115471475489C000A21FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				084115481475489C000A21FD /* gestureRecognitionTemplate-Info.plist */,
+				084115481475489C000A21FD /* gestureRecognition-Info.plist */,
 				084115491475489C000A21FD /* InfoPlist.strings */,
 				0841154C1475489C000A21FD /* main.m */,
-				0841154E1475489C000A21FD /* gestureRecognitionTemplate-Prefix.pch */,
+				0841154E1475489C000A21FD /* gestureRecognition-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0841153B1475489B000A21FD /* gestureRecognitionTemplate */ = {
+		0841153B1475489B000A21FD /* gestureRecognition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0841155A1475489C000A21FD /* Build configuration list for PBXNativeTarget "gestureRecognitionTemplate" */;
+			buildConfigurationList = 0841155A1475489C000A21FD /* Build configuration list for PBXNativeTarget "gestureRecognition" */;
 			buildPhases = (
 				084115381475489B000A21FD /* Sources */,
 				084115391475489B000A21FD /* Frameworks */,
@@ -156,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = gestureRecognitionTemplate;
+			name = gestureRecognition;
 			productName = gestureRecognitionTemplate;
-			productReference = 0841153C1475489C000A21FD /* gestureRecognitionTemplate.app */;
+			productReference = 0841153C1475489C000A21FD /* gestureRecognition.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +170,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 084115361475489B000A21FD /* Build configuration list for PBXProject "gestureRecognitionTemplate" */;
+			buildConfigurationList = 084115361475489B000A21FD /* Build configuration list for PBXProject "gestureRecognition" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0841153B1475489B000A21FD /* gestureRecognitionTemplate */,
+				0841153B1475489B000A21FD /* gestureRecognition */,
 			);
 		};
 /* End PBXProject section */
@@ -279,10 +280,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gestureRecognitionTemplate/gestureRecognitionTemplate-Prefix.pch";
-				INFOPLIST_FILE = "gestureRecognitionTemplate/gestureRecognitionTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "gestureRecognitionTemplate/gestureRecognition-Prefix.pch";
+				INFOPLIST_FILE = "gestureRecognitionTemplate/gestureRecognition-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = gestureRecognition;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -292,10 +293,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gestureRecognitionTemplate/gestureRecognitionTemplate-Prefix.pch";
-				INFOPLIST_FILE = "gestureRecognitionTemplate/gestureRecognitionTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "gestureRecognitionTemplate/gestureRecognition-Prefix.pch";
+				INFOPLIST_FILE = "gestureRecognitionTemplate/gestureRecognition-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = gestureRecognition;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -304,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		084115361475489B000A21FD /* Build configuration list for PBXProject "gestureRecognitionTemplate" */ = {
+		084115361475489B000A21FD /* Build configuration list for PBXProject "gestureRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				084115581475489C000A21FD /* Debug */,
@@ -313,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0841155A1475489C000A21FD /* Build configuration list for PBXNativeTarget "gestureRecognitionTemplate" */ = {
+		0841155A1475489C000A21FD /* Build configuration list for PBXNativeTarget "gestureRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0841155B1475489C000A21FD /* Debug */,
