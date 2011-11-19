@@ -9,23 +9,65 @@
 #ifndef gestureRecognitionTemplate_gestureRecognitionCommons_h
 #define gestureRecognitionTemplate_gestureRecognitionCommons_h
 
+
+// Constant for Pattern Recognition
+
+#define kMinimumTouchesForPatternRecognition 5
+#define kLeftCount @"LC"
+#define kRightCount @"RC"
+#define kXStraightCount @"XS"
+#define kYStraightCount @"YS"
+#define kBottomCount @"BC"
+#define kTopCount @"TC"
+
+//QuarterCirclePattern
+
+typedef enum{
+
+    UIQuarterCirclePatternNil = 0,
+    
+    UIQuarterCirclePatternN = 1,
+    UIQuarterCirclePatternNW = 2,
+    UIQuarterCirclePatternNE = 3,
+    
+    UIQuarterCirclePatternS = 4,
+    UIQuarterCirclePatternSW = 5,
+    UIQuarterCirclePatternSE = 6,
+    
+    
+} UIQuarterCirclePattern;
+
+
 //Spirale Orientation
 typedef enum {
     
-    UISpiraleOrientationRight = 1,
-    UISpiraleOrientationLeft = 2,
+    UIScrewOrientationScrewIn = 1,
+    UIScrewOrientationScrewOut = 2,
     
-} UISpiraleOrientation;
+} UIScrewOrientation;
 
 //Quarter Mouvement directions
 
 typedef enum {
     
     UIMouvementDirectionNoDirection = 0,
-    UIMouvementDirectionRightTop = 1,
-    UIMouvementDirectionRightBottom = 2,
-    UIMouvementDirectionLeftTop = 3,
-    UIMouvementDirectionLeftBottom = 4,
+    UIMouvementDirectionRight = 1,
+    UIMouvementDirectionLeft = 2,
+    UIMouvementDirectionTop = 3,
+    UIMouvementDirectionBottom = 4,
+    UIMouvementDirectionStraightX = 5,
+    UIMouvementDirectionStraightY = 6,
+
+    
+    UIMouvementDirectionRightTop = 13,
+    UIMouvementDirectionRightBottom = 14,
+    UIMouvementDirectionLeftTop = 23,
+    UIMouvementDirectionLeftBottom = 24,
+    
+    UIMouvementDirectionStraightTop = 53,
+    UIMouvementDirectionStraightBottom = 54,
+    UIMouvementDirectionLeftStraight = 26,
+    UIMouvementDirectionRightStraight = 16,
 
 } UIMouvementDirection;
 

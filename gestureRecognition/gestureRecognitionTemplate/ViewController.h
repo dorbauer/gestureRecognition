@@ -15,7 +15,7 @@
 
 - (void)drawPointOnScreen:(CGPoint)pointToDraw;
 
-- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UISpiraleOrientation)orientation;
+- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation;
 
 
 @end

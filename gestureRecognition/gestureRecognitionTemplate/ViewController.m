@@ -64,7 +64,7 @@
 
 #pragma mark - Gesture Recognition Hanlder Methods
 
-- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UISpiraleOrientation)orientation{
+- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation{
 
 }
 

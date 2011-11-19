@@ -11,5 +11,9 @@
 - 19 Novembre:
 
 	- Mise en place d'un Git Repo pour faciliter l'échange de code et le travail simultané.
+	- Dessin du mouvement sur l'écran, doubleTap pour effacer
+	- Détection basique du mouvement
 	
-	
+	Idée: Déterminer un pattern dans les K premiers points. 
+	      Système de gestion de  l'imprécision ( Médiane des coordonnées des K valeurs ).
+	      
