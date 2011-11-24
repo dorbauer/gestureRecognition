@@ -27,12 +27,12 @@ typedef enum{
     UIQuarterCirclePatternNil = 0,
     
     UIQuarterCirclePatternN = 1,
-    UIQuarterCirclePatternNW = 2,
-    UIQuarterCirclePatternNE = 3,
+    UIQuarterCirclePatternNW = 13,
+    UIQuarterCirclePatternNE = 14,
     
-    UIQuarterCirclePatternS = 4,
-    UIQuarterCirclePatternSW = 5,
-    UIQuarterCirclePatternSE = 6,
+    UIQuarterCirclePatternS = 2,
+    UIQuarterCirclePatternSW = 23,
+    UIQuarterCirclePatternSE = 24,
     
     
 } UIQuarterCirclePattern;

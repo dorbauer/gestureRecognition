@@ -12,12 +12,25 @@
 @interface ViewController(){
 @private
         CGPoint lastPoint;
+        int _detectionsCount;
+        int _highlightedPictureTag;
+    
+        NSDate *startTime;
+        NSDate *stopTime;
+
 }
 @property(nonatomic, strong) IBOutlet UIImageView *imageView; 
+@property(nonatomic, strong) IBOutlet UILabel *detectionCountLabel;
+@property(nonatomic, strong) IBOutlet UILabel *deltaTimeLabel;
+@property(nonatomic, strong) IBOutlet UILabel *pointsNeededLabel;
 @end
 
 @implementation ViewController
 @synthesize imageView = _imageView;
+@synthesize changeColor = _changeColor;
+@synthesize deltaTimeLabel = _deltaTimeLabel;
+@synthesize detectionCountLabel = _detectionCountLabel;
+@synthesize pointsNeededLabel = _pointsNeededLabel;
 
 - (void)didReceiveMemoryWarning
 {
@@ -29,28 +42,50 @@
 
 - (void)cleanScreen{
 
-    NSLog(@"Clean Console Called \n\n\n\n\n\n");
+    NSLog(@"\n\nClean Console Called \n\n");
     lastPoint.x = 0;
     lastPoint.y = 0;
     self.imageView.image = nil;
+    
+    UIImageView *tmp = (UIImageView*)[self.view viewWithTag:_highlightedPictureTag];
+    tmp.highlighted = NO;
+    _highlightedPictureTag = 0;
+    _detectionsCount = 0;
+    self.detectionCountLabel.text = @"DetectionsCount: 0";
+    self.deltaTimeLabel.text = @"DeltaT: 0ms";
+    self.pointsNeededLabel.text = @"First pattern detected after: 0 Points";
+    
+    startTime = nil;
+    stopTime = nil;
+    
     return;
 
 }
 
 - (void)drawPointOnScreen:(CGPoint)pointToDraw{
+    
+    if (!startTime) {
+        startTime = [NSDate date];
+    }
 
+    
     if (lastPoint.x == 0 && lastPoint.y == 0) {
         lastPoint = pointToDraw;
-        lastPoint.y -= 20;
+        lastPoint.y -= 40;
     }
-    
-    pointToDraw.y -= 20;
+    pointToDraw.y -= 40;
     
     UIGraphicsBeginImageContext(self.view.frame.size);
     [self.imageView.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
     CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 5.0);
-    CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, 1.0);
+    
+    if (self.changeColor) {
+        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, 1.0);
+    }else{
+        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, 1.0);
+    }
+    
     CGContextBeginPath(UIGraphicsGetCurrentContext());
     CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
     CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), pointToDraw.x, pointToDraw.y);
@@ -64,8 +99,30 @@
 
 #pragma mark - Gesture Recognition Hanlder Methods
 
-- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation{
+- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation andMouvementDirection:(UIMouvementDirection)direction{
 
+    if (!stopTime) {
+        stopTime = [NSDate date];
+        self.deltaTimeLabel.text = [NSString stringWithFormat:@"DeltaT: %f ms",[stopTime timeIntervalSinceDate:startTime]];
+        self.pointsNeededLabel.text = [NSString stringWithFormat:@"First pattern detected after: %d Points",[((SpiraleGestureRecognizer*)gestureRecognizer) touchCount] ];
+    }
+    
+#ifdef DEBUG
+    if (orientation == UIScrewOrientationScrewIn) NSLog(@"______________________ Utilisateur veux visser  ");
+    else NSLog(@"______________________ Utilisateur veux dévisser  ");
+    NSLog(@"______________________Direciton générale du mouvement: %d",direction);
+#endif
+    
+    self.detectionCountLabel.text = [NSString stringWithFormat:@"DetectionsCount: %d",++_detectionsCount];
+    
+    
+    if (_highlightedPictureTag != 0) [((UIImageView*)[self.view viewWithTag:_highlightedPictureTag]) setHighlighted:NO];
+    
+    _highlightedPictureTag = ((orientation*10)+(direction/10));
+    UIImageView *tmp = (UIImageView*)[self.view viewWithTag:_highlightedPictureTag];
+    tmp.highlighted = YES;
+    
+    
 }
 
 #pragma mark - View lifecycle

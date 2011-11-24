@@ -15,6 +15,7 @@
 }
 @property(nonatomic,strong) ViewController *vc;
 @property(nonatomic) UIMouvementDirection lastKnownMouvementDirection;
+@property(nonatomic) int touchCount;
 
 - (void)reset;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;

@@ -11,11 +11,13 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic) BOOL changeColor;
+
 - (void)cleanScreen;
 
 - (void)drawPointOnScreen:(CGPoint)pointToDraw;
 
-- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation;
+- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation andMouvementDirection:(UIMouvementDirection)direction;
 
 
 @end
