@@ -16,4 +16,20 @@
 	
 	Idée: Déterminer un pattern dans les K premiers points. 
 	      Système de gestion de  l'imprécision ( Médiane des coordonnées des K valeurs ).
+	
+	Update 25/11: voir protocole
 	      
+- 24 Novembre:
+	
+	- Détection de spirales vissantes/dévissantes droite/gauche
+	- Mise en place de l'interface utilisateur pour tester le tout
+
+/!\ Crash: Lors de la détection d'un point suspicieux, l'app peux crasher lors de la suppression des points précédents.
+=> Index out of Range ?!
+
+- 25 Novembre:
+
+	- Rédaction d'un protocole décrivant la méthode utilisée jusqu'ici
+	- Nettoyage et amélioration généraledu code
+	- Capture d'écran et photos
+	
