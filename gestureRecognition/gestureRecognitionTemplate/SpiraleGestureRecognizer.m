@@ -319,6 +319,7 @@
         _currentDetectedPattern = UIQuarterCirclePatternNil;
         _isLastPointSuspicious = NO;
         
+        
         NSRange deletionRange;
         deletionRange.location = 0;
         deletionRange.length = [[self touchDirections] count] - 2;
