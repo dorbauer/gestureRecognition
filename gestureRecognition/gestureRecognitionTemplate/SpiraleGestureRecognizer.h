@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ViewController.h"
+#import "detectionTestViewController.h"
 
 @interface SpiraleGestureRecognizer : UIGestureRecognizer
 {
 
 }
-@property(nonatomic,strong) ViewController *vc;
+@property(nonatomic,strong) detectionTestViewController *vc;
 @property(nonatomic) UIMouvementDirection lastKnownMouvementDirection;
 @property(nonatomic) int touchCount;
 

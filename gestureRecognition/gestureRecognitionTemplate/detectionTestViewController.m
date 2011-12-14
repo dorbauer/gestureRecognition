@@ -6,10 +6,10 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "detectionTestViewController.h"
 #import "SpiraleGestureRecognizer.h"
 
-@interface ViewController(){
+@interface detectionTestViewController(){
 @private
         CGPoint lastPoint;
         int _detectionsCount;
@@ -25,7 +25,7 @@
 @property(nonatomic, strong) IBOutlet UILabel *pointsNeededLabel;
 @end
 
-@implementation ViewController
+@implementation detectionTestViewController
 @synthesize imageView = _imageView;
 @synthesize changeColor = _changeColor;
 @synthesize deltaTimeLabel = _deltaTimeLabel;

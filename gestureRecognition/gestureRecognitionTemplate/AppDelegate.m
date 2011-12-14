@@ -7,11 +7,21 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "detectionTestViewController.h"
+#import "openGLViewController.h"
 
 #define RUNNING_ON_IPHONE    if (gbDeviceIsPhone)
 
+@interface AppDelegate(){
+    
+}
+-(void)loadDetectionTestViewController;
+-(void)loadopenGLViewController;
+
+@end
+
 @implementation AppDelegate
+
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
@@ -21,15 +31,33 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    NSString *nibName = [NSString stringWithString:@"ViewController"];
-    if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone) {
-        nibName = [NSString stringWithString:@"ViewController-iPad"];
-    }
-        
-    self.viewController = [[ViewController alloc] initWithNibName:nibName bundle:nil];
+    [self loadopenGLViewController];
+
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)loadDetectionTestViewController{
+
+    NSString *nibName = [NSString stringWithString:@"detectionTestViewController"];
+    if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone) {
+        nibName = [NSString stringWithString:@"detectionTestViewController-iPad"];
+    }
+    
+    self.viewController = [[detectionTestViewController alloc] initWithNibName:nibName bundle:nil];
+
+}
+
+-(void)loadopenGLViewController{
+
+    NSString *nibName = [NSString stringWithString:@"openGLViewController"];
+    if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone) {
+        nibName = [NSString stringWithString:@"openGLViewController-iPad"];
+    }
+    
+    self.viewController = [[openGLViewController alloc] initWithNibName:nibName bundle:nil];
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

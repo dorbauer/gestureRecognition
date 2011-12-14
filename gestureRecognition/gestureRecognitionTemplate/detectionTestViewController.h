@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "gestureRecognitionCommons.h"
 
-@interface ViewController : UIViewController
+@interface detectionTestViewController : UIViewController
 
 @property(nonatomic) BOOL changeColor;
 
