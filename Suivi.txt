@@ -33,3 +33,7 @@
 	- Nettoyage et amélioration généraledu code
 	- Capture d'écran et photos
 	
+- 15 Décembre:
+	
+	- Mise en place d'un controlleur de vue, d'une vue et d'un context OpenGL
+	- Utilisation de openGL 1.1
