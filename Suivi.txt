@@ -37,3 +37,9 @@
 	
 	- Mise en place d'un controlleur de vue, d'une vue et d'un context OpenGL
 	- Utilisation de openGL 1.1
+
+- 16 Décembre:
+
+	- Utilisation du Vissage/Dévissage pour déplacer un cube openGL selon Z
+	- Approche simple avec un pas
+	
