@@ -38,9 +38,10 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - Drawing On Screen Methods
+#pragma mark - SpiraleGestureRecognizerDelegate Delegate Methods
 
-- (void)cleanScreen{
+// Clean the screen
+- (void)doubleTapDetected{
 
     NSLog(@"\n\nClean Console Called \n\n");
     lastPoint.x = 0;
@@ -62,12 +63,39 @@
 
 }
 
+- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation andMouvementDirection:(UIMouvementDirection)direction{
+    
+    if (!stopTime) {
+        stopTime = [NSDate date];
+        self.deltaTimeLabel.text = [NSString stringWithFormat:@"DeltaT: %f ms",[stopTime timeIntervalSinceDate:startTime]];
+        self.pointsNeededLabel.text = [NSString stringWithFormat:@"First pattern detected after: %d Points",[((SpiraleGestureRecognizer*)gestureRecognizer) touchCount] ];
+    }
+    
+#ifdef DEBUG
+    if (orientation == UIScrewOrientationScrewIn) NSLog(@"______________________ Utilisateur veux visser  ");
+    else NSLog(@"______________________ Utilisateur veux dévisser  ");
+    NSLog(@"______________________Direciton générale du mouvement: %d",direction);
+#endif
+    
+    self.detectionCountLabel.text = [NSString stringWithFormat:@"DetectionsCount: %d",++_detectionsCount];
+    
+    
+    if (_highlightedPictureTag != 0) [((UIImageView*)[self.view viewWithTag:_highlightedPictureTag]) setHighlighted:NO];
+    
+    _highlightedPictureTag = ((orientation*10)+(direction/10));
+    UIImageView *tmp = (UIImageView*)[self.view viewWithTag:_highlightedPictureTag];
+    tmp.highlighted = YES;
+    
+    
+}
+
+#pragma Mark - Draw On Screen Methods
+
 - (void)drawPointOnScreen:(CGPoint)pointToDraw{
     
     if (!startTime) {
         startTime = [NSDate date];
     }
-
     
     if (lastPoint.x == 0 && lastPoint.y == 0) {
         lastPoint = pointToDraw;
@@ -97,33 +125,6 @@
 
 }
 
-#pragma mark - Gesture Recognition Hanlder Methods
-
-- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation andMouvementDirection:(UIMouvementDirection)direction{
-
-    if (!stopTime) {
-        stopTime = [NSDate date];
-        self.deltaTimeLabel.text = [NSString stringWithFormat:@"DeltaT: %f ms",[stopTime timeIntervalSinceDate:startTime]];
-        self.pointsNeededLabel.text = [NSString stringWithFormat:@"First pattern detected after: %d Points",[((SpiraleGestureRecognizer*)gestureRecognizer) touchCount] ];
-    }
-    
-#ifdef DEBUG
-    if (orientation == UIScrewOrientationScrewIn) NSLog(@"______________________ Utilisateur veux visser  ");
-    else NSLog(@"______________________ Utilisateur veux dévisser  ");
-    NSLog(@"______________________Direciton générale du mouvement: %d",direction);
-#endif
-    
-    self.detectionCountLabel.text = [NSString stringWithFormat:@"DetectionsCount: %d",++_detectionsCount];
-    
-    
-    if (_highlightedPictureTag != 0) [((UIImageView*)[self.view viewWithTag:_highlightedPictureTag]) setHighlighted:NO];
-    
-    _highlightedPictureTag = ((orientation*10)+(direction/10));
-    UIImageView *tmp = (UIImageView*)[self.view viewWithTag:_highlightedPictureTag];
-    tmp.highlighted = YES;
-    
-    
-}
 
 #pragma mark - View lifecycle
 
@@ -133,7 +134,7 @@
 
     //Setting up the SpiraleGestureRecognize
     SpiraleGestureRecognizer *customGR =  [[SpiraleGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-    customGR.vc = self;
+    customGR.observatedViewController = self;
     [self.view addGestureRecognizer:customGR];
 }
 

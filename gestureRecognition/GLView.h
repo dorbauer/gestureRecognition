@@ -10,6 +10,7 @@
 
 @interface GLView : UIView 
 {
+@private
     GLint backingWidth;
     GLint backingHeight;
     
@@ -22,7 +23,7 @@
     
     id <GLViewDelegate>     delegate;
 }
-@property NSTimeInterval animationInterval;
+@property (nonatomic,assign )NSTimeInterval animationInterval;
 @property (nonatomic,strong) id<GLViewDelegate> delegate;
 - (void)startAnimation;
 - (void)stopAnimation;

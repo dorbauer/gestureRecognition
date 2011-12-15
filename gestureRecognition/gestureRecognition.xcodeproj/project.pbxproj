@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiraleGestureRecognizerDelegate.h; sourceTree = "<group>"; };
 		0841153C1475489C000A21FD /* gestureRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestureRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084115401475489C000A21FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		084115421475489C000A21FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,6 +153,7 @@
 			children = (
 				0841156214758506000A21FD /* SpiraleGestureRecognizer.h */,
 				0841156314758506000A21FD /* SpiraleGestureRecognizer.m */,
+				0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */,
 			);
 			name = spiraleGestureRecognizer;
 			path = gestureRecognitionTemplate;

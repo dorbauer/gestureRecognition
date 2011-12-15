@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "detectionTestViewController.h"
 #import "openGLViewController.h"
+#import "gestureRecognitionCommons.h"
 
 #define RUNNING_ON_IPHONE    if (gbDeviceIsPhone)
 
@@ -30,9 +31,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    
-    [self loadopenGLViewController];
 
+#if kDetectionTestViewController   
+    [self loadDetectionTestViewController];
+#else
+    [self loadopenGLViewController];    
+#endif
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

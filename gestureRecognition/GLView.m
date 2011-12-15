@@ -9,7 +9,7 @@
 
 @interface GLView ()
 @property (nonatomic, retain) EAGLContext *context;
-@property (nonatomic, weak) NSTimer *animationTimer;
+@property (nonatomic, retain) NSTimer *animationTimer;
 - (BOOL) createFramebuffer;
 - (void) destroyFramebuffer;
 @end
@@ -121,8 +121,6 @@
 - (void)startAnimation 
 {
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:animationInterval target:self selector:@selector(drawView) userInfo:nil repeats:YES];
-    
-    NSLog(@"started the animation");
 }
 - (void)stopAnimation 
 {

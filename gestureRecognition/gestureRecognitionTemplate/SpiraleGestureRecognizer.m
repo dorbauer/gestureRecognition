@@ -32,7 +32,7 @@
 
 @implementation SpiraleGestureRecognizer
 
-@synthesize vc = _vc;
+@synthesize observatedViewController;
 @synthesize lastKnownMouvementDirection = _lastKnownMouvementDirection;
 @synthesize touchDirections = _touchDirections;
 @synthesize firstTouch = _firstTouch;
@@ -65,40 +65,40 @@
         case UIQuarterCirclePatternNW:
         {
             if ( _currentDetectedPattern == UIQuarterCirclePatternNE ) {
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
             
             }else if( _currentDetectedPattern == UIQuarterCirclePatternSW ){
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
             }
             break;
         }
         case UIQuarterCirclePatternNE:
         {
             if ( _currentDetectedPattern == UIQuarterCirclePatternSE ) {
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
                 
             }else if( _currentDetectedPattern == UIQuarterCirclePatternSW ){
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
             }
             break;
         }
         case UIQuarterCirclePatternSE:
         {
             if ( _currentDetectedPattern == UIQuarterCirclePatternSW ) {
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
                 
             }else if( _currentDetectedPattern == UIQuarterCirclePatternSW ){
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
             }
             break;
         }
         case UIQuarterCirclePatternSW:
         {
             if ( _currentDetectedPattern == UIQuarterCirclePatternNE ) {
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
                 
             }else if( _currentDetectedPattern == UIQuarterCirclePatternSW ){
-                [self.vc spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
+                [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
             }
             break;
         }
@@ -139,7 +139,9 @@
         }
 
     }
-    [[self vc]setChangeColor:(![[self vc] changeColor])];
+    
+    //Only for the detectionTest
+    //[[self delegate]setChangeColor:(![[self vc] changeColor])];
     return NO;
 }
 
@@ -255,8 +257,10 @@
 	
     deltaX = (secondTouch.x - firstTouch.x);
     deltaY = (secondTouch.y - firstTouch.y);
-    
+
+#ifdef DEBUG
     NSLog(@"Delta X: %f     Delta Y: %f",deltaX,deltaX);
+#endif
     
     if (deltaX < 0) xDirection = UIMouvementDirectionLeft; 
     else if( deltaX == 0 ) xDirection = UIMouvementDirectionStraightX;
@@ -282,7 +286,8 @@
     
     //Clean Up things
     if ([touch tapCount] == 2) {
-        [[self vc] cleanScreen];
+        //detectionTest Screen Cleaning
+        [[self observatedViewController] doubleTapDetected];
         [[self touchDirections] removeAllObjects];
         [self setTouchCount:0];
         return;
@@ -340,9 +345,12 @@
             _isLastPointSuspicious = YES;
         }
     }
-    //Draw on screen
-    [[self vc] drawPointOnScreen:[touch locationInView:touch.view]];
+    //Draw on screen -  DetectionTest
     
+#if kDetectionTestViewController    
+    detectionTestViewController *tmp = (detectionTestViewController*)self.delegate;
+    [tmp drawPointOnScreen:[touch locationInView:touch.view]];
+#endif
     
 }
 

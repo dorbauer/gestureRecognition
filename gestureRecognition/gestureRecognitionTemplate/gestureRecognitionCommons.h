@@ -9,6 +9,9 @@
 #ifndef gestureRecognitionTemplate_gestureRecognitionCommons_h
 #define gestureRecognitionTemplate_gestureRecognitionCommons_h
 
+//Switching ViewController Constatns
+#define kDetectionTestViewController FALSE
+
 
 // Constant for Pattern Recognition
 

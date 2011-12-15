@@ -7,17 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "gestureRecognitionCommons.h"
+#import "SpiraleGestureRecognizerDelegate.h"
 
-@interface detectionTestViewController : UIViewController
+@interface detectionTestViewController : UIViewController <SpiraleGestureRecognizerDelegate>
 
 @property(nonatomic) BOOL changeColor;
 
-- (void)cleanScreen;
-
 - (void)drawPointOnScreen:(CGPoint)pointToDraw;
-
-- (void)spiraleDetectedBy:(UIGestureRecognizer *)gestureRecognizer withOrientation:(UIScrewOrientation)orientation andMouvementDirection:(UIMouvementDirection)direction;
-
 
 @end
