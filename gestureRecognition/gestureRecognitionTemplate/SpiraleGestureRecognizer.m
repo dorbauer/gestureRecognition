@@ -7,13 +7,14 @@
 //
 
 #import "SpiraleGestureRecognizer.h"
+#import "detectionTestViewController.h"
 
 @interface SpiraleGestureRecognizer() {
 @private
     
     UIQuarterCirclePattern _lastDetectedPattern;
     UIQuarterCirclePattern _currentDetectedPattern;
-
+    
     BOOL _isLastPointSuspicious;
 }
 @property(nonatomic,strong) NSMutableArray *touchDirections;
@@ -55,18 +56,18 @@
 #pragma Mark - Private GestureRecognizer Methods
 
 - (void)checkForSpiralePattern{
-
+    
 #ifdef DEBUG  
     //NSLog(@"Last is: %d",_lastDetectedPattern);
     //NSLog(@"Last is: %d",_currentDetectedPattern);
 #endif
-
+    
     switch (_lastDetectedPattern) {
         case UIQuarterCirclePatternNW:
         {
             if ( _currentDetectedPattern == UIQuarterCirclePatternNE ) {
                 [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewIn andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
-            
+                
             }else if( _currentDetectedPattern == UIQuarterCirclePatternSW ){
                 [self.observatedViewController spiraleDetectedBy:self withOrientation:UIScrewOrientationScrewOut andMouvementDirection:[self getDirectionBetweenThisTouch:_firstTouch andThisTouch:_lastTouch]];
             }
@@ -137,18 +138,20 @@
             }
             break;
         }
-
+            
     }
     
-    //Only for the detectionTest
-    //[[self delegate]setChangeColor:(![[self vc] changeColor])];
+    //Only for "detectionViewController"
+#ifdef kDetectionTestViewController
+    [(detectionTestViewController*)observatedViewController setColor:![(detectionTestViewController*)observatedViewController changeColor]];
+#endif
     return NO;
 }
 
 - (UIQuarterCirclePattern)checkForPattern{
-
+    
 #ifdef DEBUG        
-   // NSLog(@"________CheckForPattern_________");
+    // NSLog(@"________CheckForPattern_________");
 #endif
     
     
@@ -168,7 +171,7 @@
         [xValues addObject:[NSNumber numberWithInt:(int)(tmpMvmtDir/10)]];
         [yValues addObject:[NSNumber numberWithInt:(int)(tmpMvmtDir%10)]];
     }
-
+    
     //Which x Direction is the most represented ?
     NSEnumerator *e = [xValues objectEnumerator];
     id tmp;
@@ -187,14 +190,14 @@
     max = 0;
     UIMouvementDirection yMedianValue = UIMouvementDirectionNoDirection;
     while (tmp = [e nextObject]) {
-
+        
         if ( [yValues countForObject:tmp] >= max  ) {
             yMedianValue = [tmp intValue];
             max = [yValues countForObject:tmp];
             
         }
     }
-
+    
     //NSLog(@"________________________________Pattern is :%d%d",xMedianValue,yMedianValue);
     
     [[self touchDirections] removeAllObjects];
@@ -204,11 +207,11 @@
     }
     //Temporary, waiting for a better Idee
     return (xMedianValue*10+yMedianValue);
-
+    
 }
 
 - (UIMouvementDirection)getDirectionTo:(UITouch*)touch{
-
+    
     CGPoint location = [touch locationInView:touch.view];
 	CGPoint previousLocation = [touch previousLocationInView:touch.view];
 	
@@ -228,23 +231,23 @@
     
     //Creates the composed UIMouvementDirection
     finalDirection = (xDirection*10+yDirection);
-  
+    
 #ifdef DEBUG
     
     /*NSLog(@"x:%f   y:%f",location.x,location.y);
-    NSString *x,*y;
-    if (deltaX < 0) x = @"Left "; 
-    else if( deltaX == 0 ) x = @"Straight ";
-    else x = @"Right ";
-    
-    if (deltaY < 0) y = @"Top";
-    else if( deltaY == 0) y = @"Straight";
-    else y = @"Bottom";
-    
-    NSLog(@"%@%@",x,y);*/
+     NSString *x,*y;
+     if (deltaX < 0) x = @"Left "; 
+     else if( deltaX == 0 ) x = @"Straight ";
+     else x = @"Right ";
+     
+     if (deltaY < 0) y = @"Top";
+     else if( deltaY == 0) y = @"Straight";
+     else y = @"Bottom";
+     
+     NSLog(@"%@%@",x,y);*/
 #endif
     return finalDirection;
-
+    
 }
 
 - (UIMouvementDirection)getDirectionBetweenThisTouch:(CGPoint)firstTouch andThisTouch:(CGPoint)secondTouch{
@@ -257,7 +260,7 @@
 	
     deltaX = (secondTouch.x - firstTouch.x);
     deltaY = (secondTouch.y - firstTouch.y);
-
+    
 #ifdef DEBUG
     NSLog(@"Delta X: %f     Delta Y: %f",deltaX,deltaX);
 #endif
@@ -279,7 +282,7 @@
 #pragma Mark - UIGestureRecognizer Herited Delegate Methods
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-
+    
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     [self setFirstTouch:[touch locationInView:touch.view]];
     _touchCount++;
@@ -295,16 +298,16 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-  
+    
 #ifdef DEBUG
     //NSLog(@"Touches Moved");
 #endif 
     
     _touchCount++;
-
+    
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     [self setLastTouch:[touch locationInView:touch.view]];
-
+    
     //Get LastDirection
     UIMouvementDirection lastMouvement = [self getDirectionTo:touch];
     [[self touchDirections] addObject:[NSNumber numberWithInt:lastMouvement]];
@@ -319,7 +322,7 @@
         return;
     }
     else if( _isLastPointSuspicious && ![self doesLastTouchConformToPattern] ){
-
+        
         _lastDetectedPattern = _currentDetectedPattern;
         _currentDetectedPattern = UIQuarterCirclePatternNil;
         _isLastPointSuspicious = NO;
@@ -331,12 +334,12 @@
         [[self touchDirections] removeObjectsInRange:deletionRange];
         
 #ifdef DEBUG
-       /* NSLog(@"\n\n________Changement de pattern");*/
+        /* NSLog(@"\n\n________Changement de pattern");*/
 #endif
         
         
     }else{
-    
+        
         _isLastPointSuspicious = NO;
         if(![self doesLastTouchConformToPattern] ){
 #ifdef DEBUG
@@ -348,14 +351,13 @@
     //Draw on screen -  DetectionTest
     
 #if kDetectionTestViewController    
-    detectionTestViewController *tmp = (detectionTestViewController*)self.delegate;
-    [tmp drawPointOnScreen:[touch locationInView:touch.view]];
+    [observatedViewController drawPointOnScreen:[touch locationInView:touch.view]]; 
 #endif
     
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
-
+    
 #ifdef DEBUG
     //NSLog(@"Touches Ended !");
     //NSLog(@"Touch Count:%d",[[self touchedPoints] count]);
@@ -367,15 +369,15 @@
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
-
+    
 #ifdef DEBUG
     //NSLog(@"Touches Cancelled !");
 #endif    
-
+    
 }
 
 - (void)reset{
-
+    
 #ifdef DEBUG
     //NSLog(@"Reset");
 #endif

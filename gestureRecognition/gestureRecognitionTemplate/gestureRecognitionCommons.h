@@ -12,6 +12,9 @@
 //Switching ViewController Constatns
 #define kDetectionTestViewController FALSE
 
+//Method used
+#define methodeDesAnglesCapablesUtilisees TRUE
+
 
 // Constant for Pattern Recognition
 
@@ -44,6 +47,7 @@ typedef enum{
 //Spirale Orientation
 typedef enum {
     
+    UIScrewOrientationNil = 0,
     UIScrewOrientationScrewIn = 1,
     UIScrewOrientationScrewOut = 2,
     

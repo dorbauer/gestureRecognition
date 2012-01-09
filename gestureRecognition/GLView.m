@@ -56,27 +56,23 @@
     NSLog(@"Fin d'initialisation de la GLView");
     return self;
 }
-- (void)drawView 
-{
+
+- (void)drawView {
     glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
     [delegate drawView:self];
-    
-    if( delegate == nil ) NSLog(@"Delegate nil");
 
     glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
     [context presentRenderbuffer:GL_RENDERBUFFER_OES];
-    
-    NSLog(@"ended drawView");
 }
-- (void)layoutSubviews 
-{
+
+- (void)layoutSubviews {
     [EAGLContext setCurrentContext:context];
     [self destroyFramebuffer];
     [self createFramebuffer];
     [self drawView];
 }
-- (BOOL)createFramebuffer 
-{
+
+- (BOOL)createFramebuffer {
     
     glGenFramebuffersOES(1, &viewFramebuffer);
     glGenRenderbuffersOES(1, &viewRenderbuffer);
@@ -105,8 +101,9 @@
     [delegate setupView:self];
     return YES;
 }
-- (void)destroyFramebuffer 
-{
+
+- (void)destroyFramebuffer {
+    
     glDeleteFramebuffersOES(1, &viewFramebuffer);
     viewFramebuffer = 0;
     glDeleteRenderbuffersOES(1, &viewRenderbuffer);
@@ -118,8 +115,9 @@
         depthRenderbuffer = 0;
     }
 }
-- (void)startAnimation 
-{
+
+- (void)startAnimation {
+    
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:animationInterval target:self selector:@selector(drawView) userInfo:nil repeats:YES];
 }
 - (void)stopAnimation 

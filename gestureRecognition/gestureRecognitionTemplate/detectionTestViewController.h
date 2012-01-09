@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SpiraleGestureRecognizerDelegate.h"
+#import "SpiraleGestureRecognizerUsingAngles.h"
 
 @interface detectionTestViewController : UIViewController <SpiraleGestureRecognizerDelegate>
 

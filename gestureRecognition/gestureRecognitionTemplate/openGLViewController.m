@@ -18,17 +18,16 @@ static GLfloat kZTranslate = 0.0;
 
 static const Vertex3D vertices[]= {
     
-    {-0.5, -0.5, -0.5},                 // vertices[0]
-    {0.5, -0.5, -0.5},                  // vertices[1]
-    {0.5, 0.5, -0.5},                   // vertices[2]
-    {-0.5, 0.5, -0.5},                  // vertices[3]
-    {-0.5, -0.5, -1.5},                 // vertices[4]
-    {0.5, -0.5, -1.5},                  // vertices[5]
-    {0.5, 0.5, -1.5},                   // vertices[6]
-    {-0.5, 0.5, -1.5},                  // vertices[7]
+    {-0.5, -0.5, -7.5},                 // vertices[0]
+    {0.5, -0.5, -7.5},                  // vertices[1]
+    {0.5, 0.5, -7.5},                   // vertices[2]
+    {-0.5, 0.5, -7.5},                  // vertices[3]
+    {-0.5, -0.5, -8.5},                 // vertices[4]
+    {0.5, -0.5, -8.5},                  // vertices[5]
+    {0.5, 0.5, -8.5},                   // vertices[6]
+    {-0.5, 0.5, -8.5},                  // vertices[7]
     
 };
-
 static const Color3D colors[] = {
     
     {1.0, 0.0, 0.0, 1.0},               // vertices[0]
@@ -40,7 +39,6 @@ static const Color3D colors[] = {
     {0.0, 1.0, 1.0, 1.0},               // vertices[6]
     {0.0, 0.5, 1.0, 1.0},               // vertices[7]
 };
-
 static const GLubyte cubeFaces[] = {
     
     //Front Face
@@ -77,16 +75,14 @@ static const GLubyte cubeFaces[] = {
 #endif
     
     if (orientation == UIScrewOrientationScrewIn){
-        kZTranslate -= 1.0;
-        [self drawView:nil];
+        kZTranslate -= 0.1;
         
 #ifdef DEBUG
         NSLog(@"______________________ Utilisateur veux visser  ");
 #endif
         
     }else{
-        kZTranslate += 1.0;
-        [self drawView:nil];
+        kZTranslate += 0.1;
 
 #ifdef DEBUG
         NSLog(@"______________________ Utilisateur veux dévisser  ");
@@ -102,7 +98,7 @@ static const GLubyte cubeFaces[] = {
 
 - (void)doubleTapDetected
 {
-    NSLog(@"Reset openGL Context");
+    return;
 }
 
 
@@ -155,15 +151,6 @@ static const GLubyte cubeFaces[] = {
                 size / (rect.size.width / rect.size.height),    // Top
                 zNear,                                          // Near
                 zFar);                                          // Far*/
-	
-    
-    //Setting up an orthogonal Viewport
-    /*glOrthof(-2.0,                                             // Left
-              2.0,                                              // Right
-             -2.0 / (rect.size.width / rect.size.height),        // Bottom
-              2.0 / (rect.size.width / rect.size.height),       // Top
-              zNear,                                             // Near
-             zFar);                                          // Far */
     
     glViewport(0, 0, rect.size.width, rect.size.height);  
 	glMatrixMode(GL_MODELVIEW);
@@ -186,17 +173,19 @@ static const GLubyte cubeFaces[] = {
 - (void)viewDidLoad
 {   
     [super viewDidLoad];  
-    
-    NSLog(@"View did Load");
-    
     //Setting up the spiralGestureRecognizer
-    SpiraleGestureRecognizer *spiralGR =  [[SpiraleGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-    spiralGR.observatedViewController = self;
-    [self.view addGestureRecognizer:spiralGR];
+    
+    SpiraleGestureRecognizer *customGR;
+#if methodeDesAnglesCapablesUtilisees
+     customGR =  [[SpiraleGestureRecognizerUsingAngles alloc] initWithTarget:self action:@selector(handleGesture:)];
+#else
+     customGR =  [[SpiraleGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+#endif
+    customGR.observatedViewController = self;
+    [self.view addGestureRecognizer:customGR];
     
     //Setting up the delegate method
     [[self glView] setDelegate:self];
-    
     [[self glView] setAnimationInterval:( 1.0 / kRenderingFrequency)];
     [[self glView] startAnimation];
 }

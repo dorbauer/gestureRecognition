@@ -17,20 +17,46 @@
     
         NSDate *startTime;
         NSDate *stopTime;
+        
+        SpiraleGestureRecognizer* _currentGestureRecognier;
 
 }
 @property(nonatomic, strong) IBOutlet UIImageView *imageView; 
 @property(nonatomic, strong) IBOutlet UILabel *detectionCountLabel;
 @property(nonatomic, strong) IBOutlet UILabel *deltaTimeLabel;
 @property(nonatomic, strong) IBOutlet UILabel *pointsNeededLabel;
+@property(nonatomic, strong) IBOutlet UISwitch *withAnglesSwitch;
+
+-(IBAction)changeGestureRecognizer;
+  
 @end
 
 @implementation detectionTestViewController
+
 @synthesize imageView = _imageView;
 @synthesize changeColor = _changeColor;
 @synthesize deltaTimeLabel = _deltaTimeLabel;
 @synthesize detectionCountLabel = _detectionCountLabel;
 @synthesize pointsNeededLabel = _pointsNeededLabel;
+@synthesize withAnglesSwitch = _withAnglesSwitch;
+
+
+- (IBAction)changeGestureRecognizer{
+    
+    [self doubleTapDetected];
+    [self.view removeGestureRecognizer:_currentGestureRecognier];
+    
+    if( self.withAnglesSwitch.on ){
+        NSLog(@"With Angles");
+        _currentGestureRecognier =  [[SpiraleGestureRecognizerUsingAngles alloc] initWithTarget:self action:@selector(handleGesture:)];
+    }else{
+        NSLog(@"Without Angles");
+        _currentGestureRecognier =  [[SpiraleGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+            
+    }
+    _currentGestureRecognier.observatedViewController = self;
+    [self.view addGestureRecognizer:_currentGestureRecognier];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -40,6 +66,11 @@
 
 #pragma mark - SpiraleGestureRecognizerDelegate Delegate Methods
 
+- (void)setColor:(BOOL)color{
+    
+    self.changeColor = color;
+}
+
 // Clean the screen
 - (void)doubleTapDetected{
 
@@ -48,8 +79,7 @@
     lastPoint.y = 0;
     self.imageView.image = nil;
     
-    UIImageView *tmp = (UIImageView*)[self.view viewWithTag:_highlightedPictureTag];
-    tmp.highlighted = NO;
+    if (_highlightedPictureTag != 0) [((UIImageView*)[self.view viewWithTag:_highlightedPictureTag]) setHighlighted:NO];
     _highlightedPictureTag = 0;
     _detectionsCount = 0;
     self.detectionCountLabel.text = @"DetectionsCount: 0";
@@ -132,10 +162,15 @@
 {
     [super viewDidLoad];
 
-    //Setting up the SpiraleGestureRecognize
-    SpiraleGestureRecognizer *customGR =  [[SpiraleGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-    customGR.observatedViewController = self;
-    [self.view addGestureRecognizer:customGR];
+#if methodeDesAnglesCapablesUtilisees
+    _currentGestureRecognier =  [[SpiraleGestureRecognizerUsingAngles alloc] initWithTarget:self action:@selector(handleGesture:)];
+    self.withAnglesSwitch.on = YES;
+#else
+    _currentGestureRecognier =  [[SpiraleGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+    self.withAnglesSwitch.on = NO;
+#endif
+    _currentGestureRecognier.observatedViewController = self;
+    [self.view addGestureRecognizer:_currentGestureRecognier];
 }
 
 - (void)viewDidUnload

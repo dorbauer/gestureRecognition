@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SpiraleGestureRecognizer.h"
+#import "SpiraleGestureRecognizerUsingAngles.h"
 #import "GLView.h"
 
 @interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate>
