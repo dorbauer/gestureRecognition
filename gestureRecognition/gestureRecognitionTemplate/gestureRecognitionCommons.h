@@ -10,7 +10,7 @@
 #define gestureRecognitionTemplate_gestureRecognitionCommons_h
 
 //Switching ViewController Constatns
-#define kDetectionTestViewController FALSE
+#define kDetectionTestViewController TRUE
 
 //Method used
 #define methodeDesAnglesCapablesUtilisees TRUE

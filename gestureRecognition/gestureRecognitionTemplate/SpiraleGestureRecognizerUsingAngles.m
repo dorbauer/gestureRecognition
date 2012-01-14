@@ -31,7 +31,6 @@
     
 }
 
-
 - (NSMutableArray*) pointsOnAngles{
     if (!_pointsOnAngles)
         _pointsOnAngles = [[NSMutableArray alloc] init];
@@ -65,7 +64,7 @@
     return (xDirection*10+yDirection);
 }
 
--(CGFloat) computeAngleUsingThisPointAsOrigin: (CGPoint)O thisPoint:(CGPoint)A andThisPoint: (CGPoint)B {
+- (CGFloat)computeAngleUsingThisPointAsOrigin: (CGPoint)O thisPoint:(CGPoint)A andThisPoint: (CGPoint)B {
     
     int Xoa = A.y - O.y;
     int Yoa = A.x - O.x;
@@ -83,7 +82,7 @@
     return angle;
 }
 
--(UIScrewOrientation) getSenseOfRotationFromThisPoint: (CGPoint) A throughThisPoint:(CGPoint)B andToThisPoint: (CGPoint)C {
+- (UIScrewOrientation)getSenseOfRotationFromThisPoint: (CGPoint) A throughThisPoint:(CGPoint)B andToThisPoint: (CGPoint)C {
     
     float scal = (A.x -B.x)*(C.y - A.y) + (B.y - A.y)*(C.x - A.x);
     
@@ -93,7 +92,7 @@
         return UIScrewOrientationScrewIn;
 }
 
--(BOOL) isAngleIncreasing: (CGPoint) C{
+- (BOOL) isAngleIncreasing:(CGPoint) C{
     
     if (self.pointsOnAngles.count > 0 && self.pointsOnHalfCircle.count >= 5) {
            
@@ -113,7 +112,7 @@
     return YES;
 }
 
--(UIMouvementDirection) getGeneralDirectionOfMovement{
+- (UIMouvementDirection)getGeneralDirectionOfMovement{
     if(self.pointsOnAngles.count > 0 && self.pointsOnHalfCircle.count > 0){
         CGPoint a = [self.pointsOnAngles.lastObject CGPointValue];
         CGPoint b = [[self.pointsOnHalfCircle objectAtIndex:0] CGPointValue];
@@ -124,7 +123,7 @@
     return UIMouvementDirectionNoDirection;
 }
 
-- (UIMouvementDirection) getGeneralDirectionOfMovementAlongX{
+- (UIMouvementDirection)getGeneralDirectionOfMovementAlongX{
     return [self getGeneralDirectionOfMovement] /10;
 }
 
@@ -144,7 +143,8 @@
 // if the angle AÔC is smaller, we need to check if we have a loop
 //      Now, if the point following C is located "before" C (towards the opposite sense of the general movement) then we have a "loop" and C is the new origin for the next partial circle.
 // We repeat the algorithm with O = C
-- (BOOL) isThisPointOnSpiral: (CGPoint)currentPoint {
+
+- (BOOL)isThisPointOnSpiral:(CGPoint)currentPoint {
     CGPoint origin;
     if (self.pointsOnAngles.count >0) 
         origin = [[self.pointsOnAngles objectAtIndex:0] CGPointValue];
@@ -236,10 +236,7 @@
     }
 }
 
-
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches.allObjects objectAtIndex:0];
     CGPoint currentPoint = [touch locationInView:touch.view];
     
