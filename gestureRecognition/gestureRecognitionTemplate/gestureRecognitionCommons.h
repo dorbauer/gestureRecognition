@@ -9,12 +9,39 @@
 #ifndef gestureRecognitionTemplate_gestureRecognitionCommons_h
 #define gestureRecognitionTemplate_gestureRecognitionCommons_h
 
+//OpenGl
+#define kZoomUpdateInterval 0.1
+#define kScreenToOpenGLRatio 336.84
+#define kDefaultScrewStep 0.02
+#define kDefaultDeltaZ 40.0
+#define kImprecisionFactor 0.05
+
+//User Test Cube Position
+#define kTestCaseOneX     -2.5
+#define kTestCaseTwoX      1.5
+#define kTestCaseThreeX   -2.5
+#define kTestCaseFourX    -0.5
+#define kTestCaseFiveX     2.5
+
+#define kTestCaseOneY      3.0
+#define kTestCaseTwoY     -2.5
+#define kTestCaseThreeY   -3.0
+#define kTestCaseFourY    -0.5
+#define kTestCaseFiveY    -4.0
+
+#define kTestCaseOneZ     -8.0
+#define kTestCaseTwoZ     -6.0
+#define kTestCaseThreeZ   -7.5
+#define kTestCaseFourZ    -1.5   
+#define kTestCaseFiveZ    -9.0
+
+
 //Switching ViewController Constatns
-#define kDetectionTestViewController TRUE
+#define kDetectionTestViewController FALSE
 
 //Method used
 #define methodeDesAnglesCapablesUtilisees TRUE
-
+#define methodeMartinet FALSE
 
 // Constant for Pattern Recognition
 
@@ -77,5 +104,25 @@ typedef enum {
     UIMouvementDirectionRightStraight = 16,
 
 } UIMouvementDirection;
+
+static inline int getHorizontalDelta(CGPoint firstPoint, CGPoint secondPoint){
+
+    return (secondPoint.x - firstPoint.x);
+}
+
+static inline int getVerticalDelta(CGPoint firstPoint, CGPoint secondPoint){
+    
+    return (firstPoint.y - secondPoint.y);
+}
+
+static inline UIMouvementDirection getHorizontalDirectionFromGlobal(UIMouvementDirection direction){
+
+    return direction/10;
+}
+
+static inline UIMouvementDirection getVerticalDirectionFromGlobal(UIMouvementDirection direction){
+    
+    return direction%10;
+}
 
 #endif

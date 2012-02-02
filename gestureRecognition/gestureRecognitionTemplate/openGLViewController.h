@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SpiraleGestureRecognizer.h"
-#import "SpiraleGestureRecognizerUsingAngles.h"
 #import "GLView.h"
+#import "SpiraleGestureRecognizerDelegate.h"
 
-@interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate>
+@interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate, UIAlertViewDelegate >
 {
     GLView *glView;
 }
 @property(nonatomic,retain) IBOutlet GLView *glView;
+
+
 
 @end

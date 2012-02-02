@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D8D532149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D8D531149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m */; };
 		084115411475489C000A21FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084115401475489C000A21FD /* UIKit.framework */; };
 		084115431475489C000A21FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084115421475489C000A21FD /* Foundation.framework */; };
 		084115451475489C000A21FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084115441475489C000A21FD /* CoreGraphics.framework */; };
@@ -24,6 +25,7 @@
 		08CD76A314991A3400DF6E80 /* openGLViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CD76A114991A3400DF6E80 /* openGLViewController-iPad.xib */; };
 		08CD76A51499228400DF6E80 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD76A41499228400DF6E80 /* QuartzCore.framework */; };
 		08CD76A71499228A00DF6E80 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD76A61499228A00DF6E80 /* OpenGLES.framework */; };
+		08D7D53A14D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D7D53914D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.m */; };
 		08E8F13C147EB66D0053FFBE /* DevissageDroite.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E8F138147EB66D0053FFBE /* DevissageDroite.png */; };
 		08E8F13D147EB66D0053FFBE /* DevissageGauche.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E8F139147EB66D0053FFBE /* DevissageGauche.png */; };
 		08E8F13E147EB66D0053FFBE /* VissageDroite.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E8F13A147EB66D0053FFBE /* VissageDroite.png */; };
@@ -32,12 +34,13 @@
 		08E8F146147EC0D10053FFBE /* VissageDroiteHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E8F142147EC0D10053FFBE /* VissageDroiteHighlighted.png */; };
 		08E8F147147EC0D10053FFBE /* DevissageGaucheHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E8F143147EC0D10053FFBE /* DevissageGaucheHighlighted.png */; };
 		08E8F148147EC0D10053FFBE /* DevissageDroiteHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E8F144147EC0D10053FFBE /* DevissageDroiteHighlighted.png */; };
-		08F8084714BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F8084614BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.m */; };
 		08FAA57B1475DF1F00738A28 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FAA57A1475DF1F00738A28 /* Untitled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiraleGestureRecognizerDelegate.h; sourceTree = "<group>"; };
+		01D8D530149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpiraleGestureRecognizerUsingAngles.h; path = gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.h; sourceTree = "<group>"; };
+		01D8D531149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpiraleGestureRecognizerUsingAngles.m; path = gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m; sourceTree = "<group>"; };
+		0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpiraleGestureRecognizerDelegate.h; path = gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h; sourceTree = "<group>"; };
 		0841153C1475489C000A21FD /* gestureRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestureRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084115401475489C000A21FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		084115421475489C000A21FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,6 +69,8 @@
 		08CD76A114991A3400DF6E80 /* openGLViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "openGLViewController-iPad.xib"; sourceTree = "<group>"; };
 		08CD76A41499228400DF6E80 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		08CD76A61499228A00DF6E80 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		08D7D53814D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFingersGestureRecognizerMartinet.h; sourceTree = "<group>"; };
+		08D7D53914D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFingersGestureRecognizerMartinet.m; sourceTree = "<group>"; };
 		08E8F138147EB66D0053FFBE /* DevissageDroite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DevissageDroite.png; sourceTree = "<group>"; };
 		08E8F139147EB66D0053FFBE /* DevissageGauche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DevissageGauche.png; sourceTree = "<group>"; };
 		08E8F13A147EB66D0053FFBE /* VissageDroite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VissageDroite.png; sourceTree = "<group>"; };
@@ -74,8 +79,6 @@
 		08E8F142147EC0D10053FFBE /* VissageDroiteHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VissageDroiteHighlighted.png; sourceTree = "<group>"; };
 		08E8F143147EC0D10053FFBE /* DevissageGaucheHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DevissageGaucheHighlighted.png; sourceTree = "<group>"; };
 		08E8F144147EC0D10053FFBE /* DevissageDroiteHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DevissageDroiteHighlighted.png; sourceTree = "<group>"; };
-		08F8084514BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiraleGestureRecognizerUsingAngles.h; sourceTree = "<group>"; };
-		08F8084614BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiraleGestureRecognizerUsingAngles.m; sourceTree = "<group>"; };
 		08FAA57A1475DF1F00738A28 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D8D52E149FA86300E75AFD /* spiraleGestureRecognizerUsingAngles */ = {
+			isa = PBXGroup;
+			children = (
+				01D8D530149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.h */,
+				01D8D531149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m */,
+			);
+			name = spiraleGestureRecognizerUsingAngles;
+			sourceTree = "<group>";
+		};
 		084115311475489B000A21FD = {
 			isa = PBXGroup;
 			children = (
@@ -151,14 +163,13 @@
 			path = gestureRecognitionTemplate;
 			sourceTree = "<group>";
 		};
-		08411561147584B5000A21FD /* spiraleGestureRecognizer */ = {
+		08411561147584B5000A21FD /* spiraleGestureRecognizerUsingDirections */ = {
 			isa = PBXGroup;
 			children = (
-				08F8084414BA0A8A000F0B34 /* withoutAngles */,
-				08F8084214BA0A77000F0B34 /* withAngles */,
-				0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */,
+				0841156314758506000A21FD /* SpiraleGestureRecognizer.m */,
+				0841156214758506000A21FD /* SpiraleGestureRecognizer.h */,
 			);
-			name = spiraleGestureRecognizer;
+			name = spiraleGestureRecognizerUsingDirections;
 			path = gestureRecognitionTemplate;
 			sourceTree = "<group>";
 		};
@@ -195,11 +206,14 @@
 		08952C94148D7D4B00BD26C3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				08CD76981499180800DF6E80 /* OpenGLCommon.h */,
-				08CD769D1499185F00DF6E80 /* ConstantsAndMacros.h */,
+				08D7D53314D1C26500B58C6F /* Protocols */,
 				084115671475B79D000A21FD /* gestureRecognitionCommons.h */,
+				08CD769D1499185F00DF6E80 /* ConstantsAndMacros.h */,
+				08CD76981499180800DF6E80 /* OpenGLCommon.h */,
+				08D7D53714D1CE1400B58C6F /* twoFingersGestureRecognizerMartinet */,
+				01D8D52E149FA86300E75AFD /* spiraleGestureRecognizerUsingAngles */,
+				08411561147584B5000A21FD /* spiraleGestureRecognizerUsingDirections */,
 				08952C9A148D7D8500BD26C3 /* GLView */,
-				08411561147584B5000A21FD /* spiraleGestureRecognizer */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -223,22 +237,21 @@
 			name = openGLViewController;
 			sourceTree = "<group>";
 		};
-		08F8084214BA0A77000F0B34 /* withAngles */ = {
+		08D7D53314D1C26500B58C6F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				08F8084514BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.h */,
-				08F8084614BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.m */,
+				0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */,
 			);
-			name = withAngles;
+			name = Protocols;
 			sourceTree = "<group>";
 		};
-		08F8084414BA0A8A000F0B34 /* withoutAngles */ = {
+		08D7D53714D1CE1400B58C6F /* twoFingersGestureRecognizerMartinet */ = {
 			isa = PBXGroup;
 			children = (
-				0841156214758506000A21FD /* SpiraleGestureRecognizer.h */,
-				0841156314758506000A21FD /* SpiraleGestureRecognizer.m */,
+				08D7D53814D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.h */,
+				08D7D53914D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.m */,
 			);
-			name = withoutAngles;
+			name = twoFingersGestureRecognizerMartinet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +335,8 @@
 				0841156414758506000A21FD /* SpiraleGestureRecognizer.m in Sources */,
 				08CD769C1499183600DF6E80 /* GLView.m in Sources */,
 				08CD76A214991A3400DF6E80 /* openGLViewController.m in Sources */,
-				08F8084714BA0AB2000F0B34 /* SpiraleGestureRecognizerUsingAngles.m in Sources */,
+				01D8D532149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m in Sources */,
+				08D7D53A14D1CE5A00B58C6F /* TwoFingersGestureRecognizerMartinet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

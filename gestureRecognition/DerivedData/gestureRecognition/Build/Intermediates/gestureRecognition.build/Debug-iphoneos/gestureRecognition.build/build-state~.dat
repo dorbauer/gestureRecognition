@@ -1,694 +1,0 @@
-TgestureRecognition
-v4
-r1
-cCheck dependencies
-cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist
-cProcessInfoPlistFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Info.plist" gestureRecognitionTemplate/gestureRecognition-Info.plist
-cProcessPCH "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.pth" gestureRecognitionTemplate/gestureRecognition-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition" normal armv7
-cGenerateDSYMFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition"
-cCompileXIB "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib"
-cCopyStringsFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/en.lproj/InfoPlist.strings" gestureRecognitionTemplate/en.lproj/InfoPlist.strings
-cCompileXIB "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xib"
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png" gestureRecognitionTemplate/../Untitled-iPad.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png" gestureRecognitionTemplate/../Untitled@2x.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png" gestureRecognitionTemplate/../Untitled.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png" gestureRecognitionTemplate/../DevissageDroite.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png" gestureRecognitionTemplate/../DevissageGauche.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png" gestureRecognitionTemplate/../VissageDroite.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png" gestureRecognitionTemplate/../VissageGauche.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png" gestureRecognitionTemplate/../VissageGaucheHighlighted.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png" gestureRecognitionTemplate/../VissageDroiteHighlighted.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png" gestureRecognitionTemplate/../DevissageGaucheHighlighted.png
-cCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png" gestureRecognitionTemplate/../DevissageDroiteHighlighted.png
-cCompileXIB "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib"
-cProcessProductPackaging "/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision"
-cProcessProductPackaging "/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision"
-cTouch "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent"
-cCodeSign "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
-c000000004E7840290000000000000110
-t1316503593
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
-c000000004E5C595800000000000001A7
-t1314675032
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
-c000000004E5C595800000000000001E5
-t1314675032
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004E72F28700000000003AB0A0
-t1316156039
-s3846304
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004E72F3440000000000529540
-t1316156228
-s5412160
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c000000004E72F6E00000000000017190
-t1316157152
-s94608
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004E72F8910000000000173260
-t1316157585
-s1520224
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004E7808C7000000000078BE50
-t1316489415
-s7913040
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/gestureRecognition.LinkFileList
-c000000004F0C0B670000000000000701
-t1326189415
-s1793
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.o
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.pth
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Info.plist
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/PkgInfo
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/detectionTestViewController-iPad.nib
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/detectionTestViewController.nib
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/en.lproj/InfoPlist.strings
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/openGLViewController-iPad.nib
-t2
-s0
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m
-c000000004F0B78A700000000000010FA
-t1326151847
-s4346
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageDroite.png
-c000000004ECE893C000000000009A558
-t1322158396
-s632152
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageDroiteHighlighted.png
-c000000004ECE88B00000000000081314
-t1322158256
-s529172
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageGauche.png
-c000000004ECE7ED400000000000AAA78
-t1322155732
-s699000
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageGaucheHighlighted.png
-c000000004ECE88D8000000000007D6FF
-t1322158296
-s513791
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled-iPad.png
-c000000004EC78FDC0000000000001E34
-t1321701340
-s7732
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled.png
-c000000004EC78FDC0000000000001550
-t1321701340
-s5456
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled@2x.png
-c000000004EC78FDC0000000000003556
-t1321701340
-s13654
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageDroite.png
-c000000004ECE7E99000000000008C5A0
-t1322155673
-s574880
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageDroiteHighlighted.png
-c000000004ECE88F3000000000007C7F4
-t1322158323
-s509940
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageGauche.png
-c000000004ECE7E4800000000000E3110
-t1322155592
-s930064
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageGaucheHighlighted.png
-c000000004ECE89170000000000082A13
-t1322158359
-s535059
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m
-c000000004EE9FF0D0000000000000DBA
-t1323958029
-s3514
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m
-c000000004F0B78A70000000000003275
-t1326151847
-s12917
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m
-c000000004F0B78A70000000000002DA7
-t1326151847
-s11687
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xib
-c000000004F0B78A70000000000006E4A
-t1326151847
-s28234
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m
-c000000004F0B78A700000000000019C8
-t1326151847
-s6600
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib
-c000000004EC7A8F40000000000001B81
-t1321707764
-s7041
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/en.lproj/InfoPlist.strings
-c000000004EC78FDC000000000000002D
-t1321701340
-s45
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/gestureRecognition-Prefix.pch
-c000000004EC78FDC0000000000000163
-t1321701340
-s355
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m
-c000000004EC78FDC000000000000016B
-t1321701340
-s363
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib
-c000000004EE92CB100000000000018D7
-t1323904177
-s6359
-
-N/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m
-c000000004F0B78A700000000000015D4
-t1326151847
-s5588
-
-N/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision
-c000000004ECD20CF0000000000001C81
-t1322066127
-s7297
-
-NgestureRecognitionTemplate/gestureRecognition-Info.plist
-c000000004EC7E7DA0000000000000691
-t1321723866
-s1681
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m"
-r0
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m"
-r0
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m"
-r0
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m"
-r0
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m"
-r0
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m"
-r0
-
-CBuild AST from "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m"
-r0
-
-CCheck dependencies
-r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa642c8e742bcb441^0438d5e742bcb441^---0#1#0#--18"Check dependencies36"12D0146E-FD28-4BB0-BDF6-86A4E5FA1ED0-
-
-CCodeSign "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"
-s347882223.030929
-e347882223.515521
-r1
-xCodeSign
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"CodeSign DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app37fb07ef42bcb441^baf883ef42bcb441^---0#0#0#-19%DVTDocumentLocation2@206"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/0000000000000000^1172"CodeSign DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Dorian BAUER (T9LAR598B4)" "--resource-rules=/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist" --entitlements "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"36"CE9F0A7A-F831-4A50-82E8-D8957EDB3144-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882216.644510
-e347882217.122556
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection146"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m8a1da5e842bcb441^bc5c78e942bcb441^---0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m0000000000000000^4038"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.o gestureRecognitionTemplate/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/AppDelegate.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/AppDelegate.o"36"62AED73D-5A03-44A5-8557-C004100B3915-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882217.076354
-e347882217.260074
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m22ab13e942bcb441^17bc78e942bcb441^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/GLView.m0000000000000000^3959"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.o GLView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/GLView.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/GLView.o"36"9E7331C3-6CB7-4A2F-9B7E-3B58B65FF006-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882216.645068
-e347882217.225073
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m:65:13: warning: enumeration values 'UIQuarterCirclePatternNil', 'UIQuarterCirclePatternN', and 'UIQuarterCirclePatternS' not handled in switch [-Wswitch-enum,3]
-o     switch (_lastDetectedPattern) {
-o             ^
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m:112:13: warning: enumeration values 'UIQuarterCirclePatternNil', 'UIQuarterCirclePatternN', and 'UIQuarterCirclePatternS' not handled in switch [-Wswitch-enum,3]
-o     switch (_currentDetectedPattern) {
-o             ^
-o2 warnings generated.
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.maf43a5e842bcb441^f6b378e942bcb441^-756"/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m:65:13: warning: enumeration values 'UIQuarterCirclePatternNil', 'UIQuarterCirclePatternN', and 'UIQuarterCirclePatternS' not handled in switch [-Wswitch-enum,3]     switch (_lastDetectedPattern) {             ^/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m:112:13: warning: enumeration values 'UIQuarterCirclePatternNil', 'UIQuarterCirclePatternN', and 'UIQuarterCirclePatternS' not handled in switch [-Wswitch-enum,3]     switch (_currentDetectedPattern) {             ^2 warnings generated.2(21%IDEActivityLogMessage2@126"Enumeration values 'UIQuarterCirclePatternNil', 'UIQuarterCirclePatternN', and 'UIQuarterCirclePatternS' not handled in switch-347882216#0#312#-1#-23%DVTTextDocumentLocation3@175"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m0000000000000000^64#12#64#12#18446744073709551615#0#14"Semantic Issue--2@126"Enumeration values 'UIQuarterCirclePatternNil', 'UIQuarterCirclePatternN', and 'UIQuarterCirclePatternS' not handled in switch-347882216#364#313#-1#-3@175"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m0000000000000000^111#12#111#12#18446744073709551615#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@175"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m0000000000000000^4103"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.o gestureRecognitionTemplate/SpiraleGestureRecognizer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizer.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizer.o"36"DF0B1A58-AFAB-45D6-A76C-DC201889451F-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882217.124318
-e347882217.436491
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection170"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.md7f91fe942bcb441^84d978e942bcb441^---0#0#0#-19%DVTDocumentLocation2@186"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m0000000000000000^4158"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.o gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/SpiraleGestureRecognizerUsingAngles.o"36"A0158B02-F925-4B49-8045-8AA885AFBEAB-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882216.645080
-e347882217.122992
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection162"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m3943a5e842bcb441^dd6078e942bcb441^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m0000000000000000^4118"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.o gestureRecognitionTemplate/detectionTestViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/detectionTestViewController.o"36"4B93D782-81C6-4C85-A6EA-623ED1562EDE-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882216.644553
-e347882217.075017
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m8a1da5e842bcb441^585478e942bcb441^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m0000000000000000^4003"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.o gestureRecognitionTemplate/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/main.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/main.o"36"5D5CBE1D-CD58-4720-BC76-2E8E79B007FE-
-
-CCompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882217.123924
-e347882217.437372
-r1
-xCompileC
-xDerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.o
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m:13:1: warning: incomplete implementation [-Wincomplete-implementation,3]
-o @implementation openGLViewController
-o ^
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m:13:1: warning: method in protocol not implemented [-Wprotocol,3]
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h:16:1: note: method declared here [3]
-o - (void)drawPointOnScreen:(CGPoint)pointToDraw;
-o ^
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.h:14:1: note: required for direct or indirect protocol 'SpiraleGestureRecognizerDelegate' [3]
-o @interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate>
-o ^
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m:13:1: warning: method in protocol not implemented [-Wprotocol,3]
-o @implementation openGLViewController
-o ^
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h:18:1: note: method declared here [3]
-o - (void)setColor:(BOOL)color;
-o ^
-o/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.h:14:1: note: required for direct or indirect protocol 'SpiraleGestureRecognizerDelegate' [3]
-o @interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate>
-o ^
-o3 warnings generated.
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection155"Compile /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m13f01fe942bcb441^7fde78e942bcb441^-1923"/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m:13:1: warning: incomplete implementation [-Wincomplete-implementation,3] @implementation openGLViewController ^/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m:13:1: warning: method in protocol not implemented [-Wprotocol,3]/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h:16:1: note: method declared here [3] - (void)drawPointOnScreen:(CGPoint)pointToDraw; ^/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.h:14:1: note: required for direct or indirect protocol 'SpiraleGestureRecognizerDelegate' [3] @interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate> ^/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m:13:1: warning: method in protocol not implemented [-Wprotocol,3] @implementation openGLViewController ^/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h:18:1: note: method declared here [3] - (void)setColor:(BOOL)color; ^/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.h:14:1: note: required for direct or indirect protocol 'SpiraleGestureRecognizerDelegate' [3] @interface openGLViewController : UIViewController <GLViewDelegate, SpiraleGestureRecognizerDelegate> ^3 warnings generated.3(21%IDEActivityLogMessage2@25"Incomplete implementation-347882217#0#220#-1#-23%DVTTextDocumentLocation3@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m0000000000000000^12#0#12#0#18446744073709551615#0#14"Semantic Issue--2@34"Method in protocol not implemented-347882217#261#212#2(2@20"Method declared here-347882217#473#196#-0#-3@183"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h0000000000000000^15#0#15#0#18446744073709551615#0#14"Semantic Issue--2@75"Required for direct or indirect protocol 'SpiraleGestureRecognizerDelegate'-347882217#721#239#-0#-3@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.h0000000000000000^13#0#13#0#18446744073709551615#0#14"Semantic Issue--1#-3@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m0000000000000000^12#0#12#0#18446744073709551615#0#14"Semantic Issue--2@34"Method in protocol not implemented-347882217#1066#212#2(2@20"Method declared here-347882217#1319#196#-0#-3@183"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h0000000000000000^17#0#17#0#18446744073709551615#0#14"Semantic Issue--2@75"Required for direct or indirect protocol 'SpiraleGestureRecognizerDelegate'-347882217#1549#239#-0#-3@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.h0000000000000000^13#0#13#0#18446744073709551615#0#14"Semantic Issue--1#-3@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m0000000000000000^12#0#12#0#18446744073709551615#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m0000000000000000^4083"CompileC DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.o gestureRecognitionTemplate/openGLViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -include "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.d" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController.m" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/openGLViewController.o"36"0ED78FD2-6CA9-4578-B688-07B437684346-
-
-CCompileXIB "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xib"
-s347882218.728494
-e347882219.776666
-r1
-xCompileXIB
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection171"Compiling /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xiba795baea42bcb441^84d3c6eb42bcb441^-84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@185"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xib0000000000000000^980"CompileXIB gestureRecognitionTemplate/detectionTestViewController-iPad.xib    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/detectionTestViewController-iPad.nib" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController-iPad.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"56BE2426-5688-4529-914F-2B5C1252A5CA-
-
-CCompileXIB "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib"
-s347882218.728479
-e347882219.357325
-r1
-xCompileXIB
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection166"Compiling /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib8d97baea42bcb441^8fa85ceb42bcb441^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib0000000000000000^965"CompileXIB gestureRecognitionTemplate/detectionTestViewController.xib    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/detectionTestViewController.nib" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/detectionTestViewController.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"ACA3B9E6-0562-4095-83BF-7ABEFB646B0D-
-
-CCompileXIB "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib"
-s347882222.277110
-e347882222.317342
-r1
-xCompileXIB
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Compiling /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib680847ee42bcb441^2bbe51ee42bcb441^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib0000000000000000^959"CompileXIB gestureRecognitionTemplate/openGLViewController-iPad.xib    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/openGLViewController-iPad.nib" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/openGLViewController-iPad.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"97837FF5-8A5A-4D13-94D5-7552CB61FE58-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png" gestureRecognitionTemplate/../DevissageDroite.png
-s347882219.202746
-e347882221.034520
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png
-xgestureRecognitionTemplate/../DevissageDroite.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection165"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png gestureRecognitionTemplate/../DevissageDroite.png59fb33eb42bcb441^2cd608ed42bcb441^---0#0#0#-19%DVTDocumentLocation2@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageDroite.png0000000000000000^914"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png gestureRecognitionTemplate/../DevissageDroite.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageDroite.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroite.png"36"F256D35A-C827-4A08-AF81-A0134ECDB0DA-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png" gestureRecognitionTemplate/../DevissageDroiteHighlighted.png
-s347882221.700197
-e347882222.943395
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png
-xgestureRecognitionTemplate/../DevissageDroiteHighlighted.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection187"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png gestureRecognitionTemplate/../DevissageDroiteHighlighted.pngeb56b3ed42bcb441^6682f1ee42bcb441^---0#0#0#-19%DVTDocumentLocation2@182"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageDroiteHighlighted.png0000000000000000^958"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png gestureRecognitionTemplate/../DevissageDroiteHighlighted.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageDroiteHighlighted.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageDroiteHighlighted.png"36"7F98D675-5E3E-4321-BEC8-0C7E1CA8C5F7-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png" gestureRecognitionTemplate/../DevissageGauche.png
-s347882219.301741
-e347882221.153941
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png
-xgestureRecognitionTemplate/../DevissageGauche.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection165"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png gestureRecognitionTemplate/../DevissageGauche.png40514deb42bcb441^496827ed42bcb441^---0#0#0#-19%DVTDocumentLocation2@171"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageGauche.png0000000000000000^914"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png gestureRecognitionTemplate/../DevissageGauche.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageGauche.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGauche.png"36"0B9F5416-BE65-48D3-8236-A30CAE6489F9-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png" gestureRecognitionTemplate/../DevissageGaucheHighlighted.png
-s347882221.155218
-e347882222.498541
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png
-xgestureRecognitionTemplate/../DevissageGaucheHighlighted.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection187"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png gestureRecognitionTemplate/../DevissageGaucheHighlighted.png0bd327ed42bcb441^ba9f7fee42bcb441^---0#0#0#-19%DVTDocumentLocation2@182"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageGaucheHighlighted.png0000000000000000^958"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png gestureRecognitionTemplate/../DevissageGaucheHighlighted.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../DevissageGaucheHighlighted.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/DevissageGaucheHighlighted.png"36"C448E431-3FAF-41DB-A36B-6E0C4DF55268-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png" gestureRecognitionTemplate/../Untitled-iPad.png
-s347882218.728997
-e347882219.202453
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png
-xgestureRecognitionTemplate/../Untitled-iPad.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png gestureRecognitionTemplate/../Untitled-iPad.png21acbaea42bcb441^fddd33eb42bcb441^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled-iPad.png0000000000000000^906"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png gestureRecognitionTemplate/../Untitled-iPad.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled-iPad.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled-iPad.png"36"C7EBDFC8-7EE3-4A4C-9463-C8B33818D308-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png" gestureRecognitionTemplate/../Untitled.png
-s347882219.202605
-e347882219.300547
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png
-xgestureRecognitionTemplate/../Untitled.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png gestureRecognitionTemplate/../Untitled.png88f433eb42bcb441^52f04ceb42bcb441^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled.png0000000000000000^886"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png gestureRecognitionTemplate/../Untitled.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled.png"36"2FA76173-1A18-43C1-B69C-94B771598C11-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png" gestureRecognitionTemplate/../Untitled@2x.png
-s347882218.795487
-e347882219.201201
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png
-xgestureRecognitionTemplate/../Untitled@2x.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection157"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png gestureRecognitionTemplate/../Untitled@2x.pngecbecbea42bcb441^e38e33eb42bcb441^---0#0#0#-19%DVTDocumentLocation2@167"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled@2x.png0000000000000000^902"CopyPNGFile "DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png" "gestureRecognitionTemplate/../Untitled@2x.png"    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../Untitled@2x.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Untitled@2x.png"36"B916537E-38BD-4E13-9492-C9022A60BE84-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png" gestureRecognitionTemplate/../VissageDroite.png
-s347882219.365315
-e347882220.967351
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png
-xgestureRecognitionTemplate/../VissageDroite.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png gestureRecognitionTemplate/../VissageDroite.png48a45deb42bcb441^1ea4f7ec42bcb441^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageDroite.png0000000000000000^906"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png gestureRecognitionTemplate/../VissageDroite.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageDroite.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroite.png"36"64D6E9F4-9348-44C6-96B5-E45EA52A0AEA-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png" gestureRecognitionTemplate/../VissageDroiteHighlighted.png
-s347882221.035804
-e347882222.473286
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png
-xgestureRecognitionTemplate/../VissageDroiteHighlighted.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection183"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png gestureRecognitionTemplate/../VissageDroiteHighlighted.png684009ed42bcb441^bf2879ee42bcb441^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageDroiteHighlighted.png0000000000000000^950"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png gestureRecognitionTemplate/../VissageDroiteHighlighted.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageDroiteHighlighted.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageDroiteHighlighted.png"36"26A89093-72D6-47D5-BCA5-0C176467898B-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png" gestureRecognitionTemplate/../VissageGauche.png
-s347882219.777971
-e347882221.698925
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png
-xgestureRecognitionTemplate/../VissageGauche.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png gestureRecognitionTemplate/../VissageGauche.png103fc7eb42bcb441^7decb2ed42bcb441^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageGauche.png0000000000000000^906"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png gestureRecognitionTemplate/../VissageGauche.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageGauche.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGauche.png"36"72DAFBF2-EDB7-4BAD-A296-4F3E01EFD89E-
-
-CCopyPNGFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png" gestureRecognitionTemplate/../VissageGaucheHighlighted.png
-s347882220.968649
-e347882222.275835
-r1
-xCopyPNGFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png
-xgestureRecognitionTemplate/../VissageGaucheHighlighted.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection183"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png gestureRecognitionTemplate/../VissageGaucheHighlighted.pngbb0ff8ec42bcb441^cb9c46ee42bcb441^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageGaucheHighlighted.png0000000000000000^950"CopyPNGFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png gestureRecognitionTemplate/../VissageGaucheHighlighted.png    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/../VissageGaucheHighlighted.png" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/VissageGaucheHighlighted.png"36"AFD24181-4E82-4344-BA8D-7302238161B8-
-
-CCopyStringsFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/en.lproj/InfoPlist.strings" gestureRecognitionTemplate/en.lproj/InfoPlist.strings
-s347882218.728492
-e347882218.794205
-r1
-xCopyStringsFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/en.lproj/InfoPlist.strings
-xgestureRecognitionTemplate/en.lproj/InfoPlist.strings
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy gestureRecognitionTemplate/en.lproj/InfoPlist.stringsde90baea42bcb441^3f57cbea42bcb441^---0#0#0#-19%DVTDocumentLocation2@175"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/en.lproj/InfoPlist.strings0000000000000000^752"CopyStringsFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/en.lproj/InfoPlist.strings gestureRecognitionTemplate/en.lproj/InfoPlist.strings    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/en.lproj" -- gestureRecognitionTemplate/en.lproj/InfoPlist.strings36"D0D04D19-6044-4B58-9C8C-34A8A6EE6E6E-
-
-CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist
-s347882215.871051
-e347882215.889718
-r1
-xCpResource
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
-xDerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist9869dfe742bcb441^72c3e3e742bcb441^---0#0#0#-19%DVTDocumentLocation2@225"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist00f444b4ddffdf42^822"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"36"7ADD3BFB-EFAF-4F0F-91F4-533905A360D9-
-
-CGenerateDSYMFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition"
-s347882218.642581
-e347882218.720267
-r1
-xGenerateDSYMFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection197"Generating /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM72a7a4ea42bcb441^d462b8ea42bcb441^---0#0#0#-19%DVTDocumentLocation2@210"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM00f444b4ddffdf42^867"GenerateDSYMFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app.dSYM"36"00AB057F-6032-4D6A-B4A7-F7714B7FE946-
-
-CLd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition" normal armv7
-s347882217.448280
-e347882218.634662
-r1
-xLd
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition
-xnormal
-xarmv7
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection205"Link /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition61e372e942bcb441^317aa2ea42bcb441^---0#0#0#--1517"Ld DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition normal armv7    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk "-L/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -filelist "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/Objects-normal/armv7/gestureRecognition.LinkFileList" -dead_strip -fobjc-arc -miphoneos-version-min=5.0 -framework OpenGLES -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/gestureRecognition"36"EEBD917E-7627-41BD-A32C-16472257AAB7-
-
-CProcessInfoPlistFile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Info.plist" gestureRecognitionTemplate/gestureRecognition-Info.plist
-s347882215.871058
-e347882215.890315
-r1
-xProcessInfoPlistFile
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Info.plist
-xgestureRecognitionTemplate/gestureRecognition-Info.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Process gestureRecognitionTemplate/gestureRecognition-Info.plista969dfe742bcb441^4548e5e742bcb441^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/gestureRecognition-Info.plist0000000000000000^1170"ProcessInfoPlistFile DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Info.plist gestureRecognitionTemplate/gestureRecognition-Info.plist    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility gestureRecognitionTemplate/gestureRecognition-Info.plist -genpkginfo "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/ResourceRules.plist" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/Info.plist"36"6985389F-F7EC-4023-9460-AB105FB5776C-
-
-CProcessPCH "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.pth" gestureRecognitionTemplate/gestureRecognition-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s347882215.903761
-e347882216.638039
-r1
-xProcessPCH
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.pth
-xgestureRecognitionTemplate/gestureRecognition-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Precompile gestureRecognitionTemplate/gestureRecognition-Prefix.pch8082e7e742bcb441^9756a3e842bcb441^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/gestureRecognition-Prefix.pch0000000000000000^3809"ProcessPCH DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.pth gestureRecognitionTemplate/gestureRecognition-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-generated-files.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-own-target-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-all-target-headers.hmap" -iquote "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition-project-headers.hmap" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/include" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources/armv7" "-I/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/DerivedSources" "-F/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos" -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/gestureRecognitionTemplate/gestureRecognition-Prefix.pch" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/PrecompiledHeaders/gestureRecognition-Prefix-cndqdtanmawdajgdryfpvleaykgs/gestureRecognition-Prefix.pch.d"36"1D479DD5-61F9-45A7-82EF-7FB3AC6B8111-
-
-CProcessPCH "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Index/PrecompiledHeaders/gestureRecognition-Prefix-avkugcppfsjbueaumqrrnrnpsmca_ast/gestureRecognition-Prefix.pch.pth" gestureRecognitionTemplate/gestureRecognition-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessProductPackaging "/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision" "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision"
-s347882222.964867
-e347882222.969121
-r1
-xProcessProductPackaging
-x/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection249"ProcessProductPackaging "/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision" DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision153af7ee42bcb441^2f18f8ee42bcb441^---0#0#0#-19%DVTDocumentLocation2@230"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision0000000000000000^846"ProcessProductPackaging "/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision" DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/dorianbauer/Library/MobileDevice/Provisioning Profiles/3D9AE6BF-4B6C-4CD9-B0BB-D149201E537F.mobileprovision" -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app/embedded.mobileprovision"36"5E7E870C-7A7F-4BDF-B8CC-2FAA9A915C13-
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent"
-s347882223.000309
-e347882223.023436
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection253"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent2d2400ef42bcb441^50ff05ef42bcb441^---0#0#0#-19%DVTDocumentLocation2@262"file://localhost/Users/dorianbauer/Documents/Cours/M2/Projets%20de%20synthe%CC%80se/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent00f444b4ddffdf42^880"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Intermediates/gestureRecognition.build/Debug-iphoneos/gestureRecognition.build/gestureRecognition.xcent"36"9A6BE47C-0288-43A6-9ED2-F3BE57E048FF-
-
-CTouch "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"
-s347882222.977169
-e347882222.992537
-r1
-xTouch
-x/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection187"Touch /Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app603dfaee42bcb441^9416feee42bcb441^---0#0#0#--527"Touch DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app    cd "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/dorianbauer/Documents/Cours/M2/Projets de synthèse/gestureRecognition/gestureRecognition/DerivedData/gestureRecognition/Build/Products/Debug-iphoneos/gestureRecognition.app"36"0992ACDB-E60C-4201-A32F-387566E7B028-
-
