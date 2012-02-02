@@ -1,0 +1,68 @@
+- 17 Novembre:
+	
+	- RDV avec Robin Vivian, discussion du projet, mise en place de RDV futures, 
+	- Première tâche: Reconnaissance du mouvement de spirale.
+	
+- 18 Novembre:
+	
+	- Création d'un projet Universal, pour un dev iPhone/iPad simultané.
+	- Les doigts sont reconnus au pixel près, le nombre de doigt aussi.
+	
+- 19 Novembre:
+
+	- Mise en place d'un Git Repo pour faciliter l'échange de code et le travail simultané.
+	- Dessin du mouvement sur l'écran, doubleTap pour effacer
+	- Détection basique du mouvement
+	
+	Idée: Déterminer un pattern dans les K premiers points. 
+	      Système de gestion de  l'imprécision ( Médiane des coordonnées des K valeurs ).
+	
+	Update 25/11: voir protocole
+	      
+- 24 Novembre:
+	
+	- Détection de spirales vissantes/dévissantes droite/gauche
+	- Mise en place de l'interface utilisateur pour tester le tout
+
+/!\ Crash: Lors de la détection d'un point suspicieux, l'app peux crasher lors de la suppression des points précédents.
+=> Index out of Range ?!
+
+- 25 Novembre:
+
+	- Rédaction d'un protocole décrivant la méthode utilisée jusqu'ici
+	- Nettoyage et amélioration généraledu code
+	- Capture d'écran et photos
+	
+- 15 Décembre:
+	
+	- Mise en place d'un controlleur de vue, d'une vue et d'un context OpenGL
+	- Utilisation de openGL 1.1
+
+- 16 Décembre:
+
+	- Utilisation d'un nouveaux gestionnaire de mouvement basé sur le calcul d'angle
+	
+	
+	- Utilisation du Vissage/Dévissage pour déplacer un cube openGL selon Z
+	- Approche simple avec un pas
+
+- 1 Février:
+	- Mise en place de la méthode de Martinet
+        - Méthode Spirale(1): Un doigt déplace X, Y
+			      Deux doigts déplace Z
+
+        - Méthode Spirale(2): Un doigt déplace X, Y
+        		      Deux doigts déplace X,Y,Z
+
+	- Tentative d'ajout de mûrs, lumières pour notion d'espace.
+
+	- Début des tests:
+		Test 1: Méthode Martinet en authorisant qu'un seul mouvement à la fois ( X,Y) ou Z
+                                  			VS
+			Méthode Spirale 1
+
+                Test 2: Méthode Martinet 
+				VS
+			Méthode Spirale 2
+
+	

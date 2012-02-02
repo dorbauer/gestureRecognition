@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D8D532149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D8D531149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m */; };
+		084115411475489C000A21FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084115401475489C000A21FD /* UIKit.framework */; };
+		084115431475489C000A21FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084115421475489C000A21FD /* Foundation.framework */; };
+		084115451475489C000A21FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084115441475489C000A21FD /* CoreGraphics.framework */; };
+		0841154B1475489C000A21FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 084115491475489C000A21FD /* InfoPlist.strings */; };
+		0841154D1475489C000A21FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841154C1475489C000A21FD /* main.m */; };
+		084115511475489C000A21FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 084115501475489C000A21FD /* AppDelegate.m */; };
+		084115541475489C000A21FD /* detectionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 084115531475489C000A21FD /* detectionTestViewController.m */; };
+		0841156414758506000A21FD /* SpiraleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841156314758506000A21FD /* SpiraleGestureRecognizer.m */; };
+		0841158C1475CE68000A21FD /* detectionTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0841158B1475CE68000A21FD /* detectionTestViewController.xib */; };
+		084115A71475D4CD000A21FD /* detectionTestViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084115A61475D4CD000A21FD /* detectionTestViewController-iPad.xib */; };
+		0888FDC914DA95C700123B05 /* DevissageDroite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDBD14DA95C700123B05 /* DevissageDroite.png */; };
+		0888FDCA14DA95C700123B05 /* DevissageDroiteHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDBE14DA95C700123B05 /* DevissageDroiteHighlighted.png */; };
+		0888FDCB14DA95C700123B05 /* DevissageGauche.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDBF14DA95C700123B05 /* DevissageGauche.png */; };
+		0888FDCC14DA95C700123B05 /* DevissageGaucheHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC014DA95C700123B05 /* DevissageGaucheHighlighted.png */; };
+		0888FDCD14DA95C700123B05 /* spiral.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC114DA95C700123B05 /* spiral.png */; };
+		0888FDCE14DA95C700123B05 /* Untitled-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC214DA95C700123B05 /* Untitled-iPad.png */; };
+		0888FDCF14DA95C700123B05 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC314DA95C700123B05 /* Untitled.png */; };
+		0888FDD014DA95C700123B05 /* Untitled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC414DA95C700123B05 /* Untitled@2x.png */; };
+		0888FDD114DA95C700123B05 /* VissageDroite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC514DA95C700123B05 /* VissageDroite.png */; };
+		0888FDD214DA95C700123B05 /* VissageDroiteHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC614DA95C700123B05 /* VissageDroiteHighlighted.png */; };
+		0888FDD314DA95C700123B05 /* VissageGauche.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC714DA95C700123B05 /* VissageGauche.png */; };
+		0888FDD414DA95C700123B05 /* VissageGaucheHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0888FDC814DA95C700123B05 /* VissageGaucheHighlighted.png */; };
+		0888FDD714DA95DD00123B05 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0888FDD614DA95DD00123B05 /* GLView.m */; };
+		0888FDDA14DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0888FDD914DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.m */; };
+		08CD76A214991A3400DF6E80 /* openGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CD76A014991A3400DF6E80 /* openGLViewController.m */; };
+		08CD76A314991A3400DF6E80 /* openGLViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CD76A114991A3400DF6E80 /* openGLViewController-iPad.xib */; };
+		08CD76A51499228400DF6E80 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD76A41499228400DF6E80 /* QuartzCore.framework */; };
+		08CD76A71499228A00DF6E80 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD76A61499228A00DF6E80 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01D8D530149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpiraleGestureRecognizerUsingAngles.h; path = gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.h; sourceTree = "<group>"; };
+		01D8D531149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpiraleGestureRecognizerUsingAngles.m; path = gestureRecognitionTemplate/SpiraleGestureRecognizerUsingAngles.m; sourceTree = "<group>"; };
+		0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpiraleGestureRecognizerDelegate.h; path = gestureRecognitionTemplate/SpiraleGestureRecognizerDelegate.h; sourceTree = "<group>"; };
+		0841153C1475489C000A21FD /* gestureRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestureRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		084115401475489C000A21FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		084115421475489C000A21FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		084115441475489C000A21FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		084115481475489C000A21FD /* gestureRecognition-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gestureRecognition-Info.plist"; sourceTree = "<group>"; };
+		0841154A1475489C000A21FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0841154C1475489C000A21FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0841154E1475489C000A21FD /* gestureRecognition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gestureRecognition-Prefix.pch"; sourceTree = "<group>"; };
+		0841154F1475489C000A21FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = gestureRecognitionTemplate/AppDelegate.h; sourceTree = "<group>"; };
+		084115501475489C000A21FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = gestureRecognitionTemplate/AppDelegate.m; sourceTree = "<group>"; };
+		084115521475489C000A21FD /* detectionTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detectionTestViewController.h; sourceTree = "<group>"; };
+		084115531475489C000A21FD /* detectionTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detectionTestViewController.m; sourceTree = "<group>"; };
+		0841156214758506000A21FD /* SpiraleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiraleGestureRecognizer.h; sourceTree = "<group>"; };
+		0841156314758506000A21FD /* SpiraleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiraleGestureRecognizer.m; sourceTree = "<group>"; };
+		084115671475B79D000A21FD /* gestureRecognitionCommons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gestureRecognitionCommons.h; path = gestureRecognitionTemplate/gestureRecognitionCommons.h; sourceTree = "<group>"; };
+		0841158B1475CE68000A21FD /* detectionTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detectionTestViewController.xib; sourceTree = "<group>"; };
+		084115A61475D4CD000A21FD /* detectionTestViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "detectionTestViewController-iPad.xib"; sourceTree = "<group>"; };
+		0888FDBD14DA95C700123B05 /* DevissageDroite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DevissageDroite.png; path = Images/DevissageDroite.png; sourceTree = "<group>"; };
+		0888FDBE14DA95C700123B05 /* DevissageDroiteHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DevissageDroiteHighlighted.png; path = Images/DevissageDroiteHighlighted.png; sourceTree = "<group>"; };
+		0888FDBF14DA95C700123B05 /* DevissageGauche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DevissageGauche.png; path = Images/DevissageGauche.png; sourceTree = "<group>"; };
+		0888FDC014DA95C700123B05 /* DevissageGaucheHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DevissageGaucheHighlighted.png; path = Images/DevissageGaucheHighlighted.png; sourceTree = "<group>"; };
+		0888FDC114DA95C700123B05 /* spiral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spiral.png; path = Images/spiral.png; sourceTree = "<group>"; };
+		0888FDC214DA95C700123B05 /* Untitled-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-iPad.png"; path = "Images/Untitled-iPad.png"; sourceTree = "<group>"; };
+		0888FDC314DA95C700123B05 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = Images/Untitled.png; sourceTree = "<group>"; };
+		0888FDC414DA95C700123B05 /* Untitled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled@2x.png"; path = "Images/Untitled@2x.png"; sourceTree = "<group>"; };
+		0888FDC514DA95C700123B05 /* VissageDroite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VissageDroite.png; path = Images/VissageDroite.png; sourceTree = "<group>"; };
+		0888FDC614DA95C700123B05 /* VissageDroiteHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VissageDroiteHighlighted.png; path = Images/VissageDroiteHighlighted.png; sourceTree = "<group>"; };
+		0888FDC714DA95C700123B05 /* VissageGauche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VissageGauche.png; path = Images/VissageGauche.png; sourceTree = "<group>"; };
+		0888FDC814DA95C700123B05 /* VissageGaucheHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VissageGaucheHighlighted.png; path = Images/VissageGaucheHighlighted.png; sourceTree = "<group>"; };
+		0888FDD514DA95DD00123B05 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = gestureRecognitionTemplate/GLView.h; sourceTree = "<group>"; };
+		0888FDD614DA95DD00123B05 /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLView.m; path = gestureRecognitionTemplate/GLView.m; sourceTree = "<group>"; };
+		0888FDD814DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwoFingersGestureRecognizerMartinet.h; path = gestureRecognitionTemplate/TwoFingersGestureRecognizerMartinet.h; sourceTree = "<group>"; };
+		0888FDD914DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwoFingersGestureRecognizerMartinet.m; path = gestureRecognitionTemplate/TwoFingersGestureRecognizerMartinet.m; sourceTree = "<group>"; };
+		0888FDDB14DA960000123B05 /* ConstantsAndMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConstantsAndMacros.h; path = gestureRecognitionTemplate/ConstantsAndMacros.h; sourceTree = "<group>"; };
+		0888FDDC14DA960000123B05 /* OpenGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLCommon.h; path = gestureRecognitionTemplate/OpenGLCommon.h; sourceTree = "<group>"; };
+		08CD769F14991A3400DF6E80 /* openGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openGLViewController.h; sourceTree = "<group>"; };
+		08CD76A014991A3400DF6E80 /* openGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openGLViewController.m; sourceTree = "<group>"; };
+		08CD76A114991A3400DF6E80 /* openGLViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "openGLViewController-iPad.xib"; sourceTree = "<group>"; };
+		08CD76A41499228400DF6E80 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		08CD76A61499228A00DF6E80 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		084115391475489B000A21FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CD76A71499228A00DF6E80 /* OpenGLES.framework in Frameworks */,
+				08CD76A51499228400DF6E80 /* QuartzCore.framework in Frameworks */,
+				084115411475489C000A21FD /* UIKit.framework in Frameworks */,
+				084115431475489C000A21FD /* Foundation.framework in Frameworks */,
+				084115451475489C000A21FD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D8D52E149FA86300E75AFD /* spiraleGestureRecognizerUsingAngles */ = {
+			isa = PBXGroup;
+			children = (
+				01D8D530149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.h */,
+				01D8D531149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m */,
+			);
+			name = spiraleGestureRecognizerUsingAngles;
+			sourceTree = "<group>";
+		};
+		084115311475489B000A21FD = {
+			isa = PBXGroup;
+			children = (
+				08CD76A61499228A00DF6E80 /* OpenGLES.framework */,
+				08CD76A41499228400DF6E80 /* QuartzCore.framework */,
+				08952C94148D7D4B00BD26C3 /* Classes */,
+				084115461475489C000A21FD /* Controllers */,
+				0841154F1475489C000A21FD /* AppDelegate.h */,
+				084115501475489C000A21FD /* AppDelegate.m */,
+				084115471475489C000A21FD /* Supporting Files */,
+				0841153F1475489C000A21FD /* Frameworks */,
+				0841153D1475489C000A21FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0841153D1475489C000A21FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0841153C1475489C000A21FD /* gestureRecognition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0841153F1475489C000A21FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084115401475489C000A21FD /* UIKit.framework */,
+				084115421475489C000A21FD /* Foundation.framework */,
+				084115441475489C000A21FD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		084115461475489C000A21FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08CD769E149919E400DF6E80 /* openGLViewController */,
+				0841156514758514000A21FD /* detectionViewController */,
+			);
+			name = Controllers;
+			path = gestureRecognitionTemplate;
+			sourceTree = "<group>";
+		};
+		084115471475489C000A21FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				084115AC1475D5E5000A21FD /* Images */,
+				084115481475489C000A21FD /* gestureRecognition-Info.plist */,
+				084115491475489C000A21FD /* InfoPlist.strings */,
+				0841154C1475489C000A21FD /* main.m */,
+				0841154E1475489C000A21FD /* gestureRecognition-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = gestureRecognitionTemplate;
+			sourceTree = "<group>";
+		};
+		08411561147584B5000A21FD /* spiraleGestureRecognizerUsingDirections */ = {
+			isa = PBXGroup;
+			children = (
+				0841156314758506000A21FD /* SpiraleGestureRecognizer.m */,
+				0841156214758506000A21FD /* SpiraleGestureRecognizer.h */,
+			);
+			name = spiraleGestureRecognizerUsingDirections;
+			path = gestureRecognitionTemplate;
+			sourceTree = "<group>";
+		};
+		0841156514758514000A21FD /* detectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				084115521475489C000A21FD /* detectionTestViewController.h */,
+				084115531475489C000A21FD /* detectionTestViewController.m */,
+				0841158B1475CE68000A21FD /* detectionTestViewController.xib */,
+				084115A61475D4CD000A21FD /* detectionTestViewController-iPad.xib */,
+			);
+			name = detectionViewController;
+			sourceTree = "<group>";
+		};
+		084115AC1475D5E5000A21FD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0888FDBD14DA95C700123B05 /* DevissageDroite.png */,
+				0888FDBE14DA95C700123B05 /* DevissageDroiteHighlighted.png */,
+				0888FDBF14DA95C700123B05 /* DevissageGauche.png */,
+				0888FDC014DA95C700123B05 /* DevissageGaucheHighlighted.png */,
+				0888FDC114DA95C700123B05 /* spiral.png */,
+				0888FDC214DA95C700123B05 /* Untitled-iPad.png */,
+				0888FDC314DA95C700123B05 /* Untitled.png */,
+				0888FDC414DA95C700123B05 /* Untitled@2x.png */,
+				0888FDC514DA95C700123B05 /* VissageDroite.png */,
+				0888FDC614DA95C700123B05 /* VissageDroiteHighlighted.png */,
+				0888FDC714DA95C700123B05 /* VissageGauche.png */,
+				0888FDC814DA95C700123B05 /* VissageGaucheHighlighted.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		08952C94148D7D4B00BD26C3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08D7D53314D1C26500B58C6F /* Protocols */,
+				084115671475B79D000A21FD /* gestureRecognitionCommons.h */,
+				0888FDDB14DA960000123B05 /* ConstantsAndMacros.h */,
+				0888FDDC14DA960000123B05 /* OpenGLCommon.h */,
+				08D7D53714D1CE1400B58C6F /* twoFingersGestureRecognizerMartinet */,
+				01D8D52E149FA86300E75AFD /* spiraleGestureRecognizerUsingAngles */,
+				08411561147584B5000A21FD /* spiraleGestureRecognizerUsingDirections */,
+				08952C9A148D7D8500BD26C3 /* GLView */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		08952C9A148D7D8500BD26C3 /* GLView */ = {
+			isa = PBXGroup;
+			children = (
+				0888FDD514DA95DD00123B05 /* GLView.h */,
+				0888FDD614DA95DD00123B05 /* GLView.m */,
+			);
+			name = GLView;
+			sourceTree = "<group>";
+		};
+		08CD769E149919E400DF6E80 /* openGLViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08CD769F14991A3400DF6E80 /* openGLViewController.h */,
+				08CD76A014991A3400DF6E80 /* openGLViewController.m */,
+				08CD76A114991A3400DF6E80 /* openGLViewController-iPad.xib */,
+			);
+			name = openGLViewController;
+			sourceTree = "<group>";
+		};
+		08D7D53314D1C26500B58C6F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0819E0DA149A153A005E0245 /* SpiraleGestureRecognizerDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		08D7D53714D1CE1400B58C6F /* twoFingersGestureRecognizerMartinet */ = {
+			isa = PBXGroup;
+			children = (
+				0888FDD814DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.h */,
+				0888FDD914DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.m */,
+			);
+			name = twoFingersGestureRecognizerMartinet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0841153B1475489B000A21FD /* gestureRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0841155A1475489C000A21FD /* Build configuration list for PBXNativeTarget "gestureRecognition" */;
+			buildPhases = (
+				084115381475489B000A21FD /* Sources */,
+				084115391475489B000A21FD /* Frameworks */,
+				0841153A1475489B000A21FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gestureRecognition;
+			productName = gestureRecognitionTemplate;
+			productReference = 0841153C1475489C000A21FD /* gestureRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		084115331475489B000A21FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 084115361475489B000A21FD /* Build configuration list for PBXProject "gestureRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 084115311475489B000A21FD;
+			productRefGroup = 0841153D1475489C000A21FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0841153B1475489B000A21FD /* gestureRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0841153A1475489B000A21FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0841154B1475489C000A21FD /* InfoPlist.strings in Resources */,
+				0841158C1475CE68000A21FD /* detectionTestViewController.xib in Resources */,
+				084115A71475D4CD000A21FD /* detectionTestViewController-iPad.xib in Resources */,
+				08CD76A314991A3400DF6E80 /* openGLViewController-iPad.xib in Resources */,
+				0888FDC914DA95C700123B05 /* DevissageDroite.png in Resources */,
+				0888FDCA14DA95C700123B05 /* DevissageDroiteHighlighted.png in Resources */,
+				0888FDCB14DA95C700123B05 /* DevissageGauche.png in Resources */,
+				0888FDCC14DA95C700123B05 /* DevissageGaucheHighlighted.png in Resources */,
+				0888FDCD14DA95C700123B05 /* spiral.png in Resources */,
+				0888FDCE14DA95C700123B05 /* Untitled-iPad.png in Resources */,
+				0888FDCF14DA95C700123B05 /* Untitled.png in Resources */,
+				0888FDD014DA95C700123B05 /* Untitled@2x.png in Resources */,
+				0888FDD114DA95C700123B05 /* VissageDroite.png in Resources */,
+				0888FDD214DA95C700123B05 /* VissageDroiteHighlighted.png in Resources */,
+				0888FDD314DA95C700123B05 /* VissageGauche.png in Resources */,
+				0888FDD414DA95C700123B05 /* VissageGaucheHighlighted.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084115381475489B000A21FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0841154D1475489C000A21FD /* main.m in Sources */,
+				084115511475489C000A21FD /* AppDelegate.m in Sources */,
+				084115541475489C000A21FD /* detectionTestViewController.m in Sources */,
+				0841156414758506000A21FD /* SpiraleGestureRecognizer.m in Sources */,
+				08CD76A214991A3400DF6E80 /* openGLViewController.m in Sources */,
+				01D8D532149FA8D500E75AFD /* SpiraleGestureRecognizerUsingAngles.m in Sources */,
+				0888FDD714DA95DD00123B05 /* GLView.m in Sources */,
+				0888FDDA14DA95F400123B05 /* TwoFingersGestureRecognizerMartinet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		084115491475489C000A21FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0841154A1475489C000A21FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		084115581475489C000A21FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		084115591475489C000A21FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0841155B1475489C000A21FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gestureRecognitionTemplate/gestureRecognition-Prefix.pch";
+				INFOPLIST_FILE = "gestureRecognitionTemplate/gestureRecognition-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = gestureRecognition;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0841155C1475489C000A21FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gestureRecognitionTemplate/gestureRecognition-Prefix.pch";
+				INFOPLIST_FILE = "gestureRecognitionTemplate/gestureRecognition-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = gestureRecognition;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		084115361475489B000A21FD /* Build configuration list for PBXProject "gestureRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084115581475489C000A21FD /* Debug */,
+				084115591475489C000A21FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0841155A1475489C000A21FD /* Build configuration list for PBXNativeTarget "gestureRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0841155B1475489C000A21FD /* Debug */,
+				0841155C1475489C000A21FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 084115331475489B000A21FD /* Project object */;
+}
