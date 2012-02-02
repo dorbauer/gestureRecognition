@@ -40,6 +40,29 @@
 
 - 16 Décembre:
 
+	- Utilisation d'un nouveaux gestionnaire de mouvement basé sur le calcul d'angle
+	
+	
 	- Utilisation du Vissage/Dévissage pour déplacer un cube openGL selon Z
 	- Approche simple avec un pas
+
+- 1 Février:
+	- Mise en place de la méthode de Martinet
+        - Méthode Spirale(1): Un doigt déplace X, Y
+			      Deux doigts déplace Z
+
+        - Méthode Spirale(2): Un doigt déplace X, Y
+        		      Deux doigts déplace X,Y,Z
+
+	- Tentative d'ajout de mûrs, lumières pour notion d'espace.
+
+	- Début des tests:
+		Test 1: Méthode Martinet en authorisant qu'un seul mouvement à la fois ( X,Y) ou Z
+                                  			VS
+			Méthode Spirale 1
+
+                Test 2: Méthode Martinet 
+				VS
+			Méthode Spirale 2
+
 	
