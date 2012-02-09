@@ -14,7 +14,7 @@
 #define kScreenToOpenGLRatio 336.84
 #define kDefaultScrewStep 0.02
 #define kDefaultDeltaZ 40.0
-#define kImprecisionFactor 0.05
+#define kImprecisionFactor 0.2
 
 //User Test Cube Position
 #define kTestCaseOneX     -2.5
@@ -26,8 +26,8 @@
 #define kTestCaseOneY      3.0
 #define kTestCaseTwoY     -2.5
 #define kTestCaseThreeY   -3.0
-#define kTestCaseFourY    -0.5
-#define kTestCaseFiveY    -4.0
+#define kTestCaseFourY    0.5
+#define kTestCaseFiveY    -3.0
 
 #define kTestCaseOneZ     -8.0
 #define kTestCaseTwoZ     -6.0
