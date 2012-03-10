@@ -216,6 +216,11 @@
     self.update = NO;
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    self.fingersOnScreen = 0;
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 
 #if DEBUG
@@ -234,14 +239,17 @@
     
     if ([touch tapCount] == 3) {
         self.shouldUse3DOF = ![self shouldUse3DOF];
+        NSString *message;
+        ([self shouldUse3DOF] == YES) ? message = @"will be used" : @"won't be used";
+        
+        UIAlertView *tmp = [[UIAlertView alloc] initWithTitle:@"3DOF" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [tmp show];
     }
     
     //Switch to martinet
     if ([touch tapCount] == 4) {
         [[self observatedViewController] tripleTapDetected];
-    }
-    
-     
+    } 
 }
 
 

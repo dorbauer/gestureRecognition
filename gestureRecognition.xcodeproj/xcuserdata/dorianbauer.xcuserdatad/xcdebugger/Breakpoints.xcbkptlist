@@ -9,12 +9,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "gestureRecognitionTemplate/openGLViewController.m"
-         timestampString = "349693371.429244"
+         timestampString = "352984045.498374"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "219"
-         endingLineNumber = "219"
-         landmarkName = "-spiraleDetectedBy:withOrientation:andMouvementDirection:"
+         startingLineNumber = "605"
+         endingLineNumber = "605"
+         landmarkName = "-viewDidUnload"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

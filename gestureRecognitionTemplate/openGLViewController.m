@@ -469,7 +469,6 @@ static const Color3D colisionColor[] = {
       }
     
     glPushMatrix();
-    //glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, ambientAndDiffuse1);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_BYTE, cubeFaces);
     glPopMatrix();
     
@@ -484,7 +483,6 @@ static const Color3D colisionColor[] = {
     }
     
     glPushMatrix();
-    //glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, ambientAndDiffuse2);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_BYTE, cubeFaces);
     glPopMatrix();
     

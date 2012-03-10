@@ -142,7 +142,11 @@
     }
     
     //Only for the detectionTest
-    //[[self delegate]setChangeColor:(![[self vc] changeColor])];
+#if kDetectionTestViewController
+    detectionTestViewController* test = (detectionTestViewController*)observatedViewController;
+    
+    [test setChangeColor:(![test changeColor])];
+#endif
     return NO;
 }
 

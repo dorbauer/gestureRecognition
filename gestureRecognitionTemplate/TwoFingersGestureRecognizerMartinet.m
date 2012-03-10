@@ -12,7 +12,12 @@
 
 #pragma mark - Private Interface
 
-@interface TwoFingersGestureRecognizerMartinet(){}
+@interface TwoFingersGestureRecognizerMartinet(){
+
+    UITouch *leftHand;
+    UITouch *rightHand;
+}
+
 
 @property (nonatomic) int fingersOnScreen;
 
@@ -26,13 +31,14 @@
 
 - (id)init {
     _fingersOnScreen = 0;
+    leftHand = NULL;
+    rightHand = NULL;
     return self;
 }
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    
-    NSLog(@"YYYYYYOOOOOOOUUUUUUHHHHHHOOOOOOOUUUUUU");
+
     
     self.fingersOnScreen += [touches count];
     
@@ -40,6 +46,14 @@
     if ([touch tapCount] == 3) {
         [[self observatedViewController] tripleTapDetected];
     }
+    
+    if ([touch locationInView:touch.view].y < ([[touch view] frame].size.height)/4 ) {
+        
+        leftHand = touch;
+    }else{
+        rightHand = touch;
+    }
+    
     
     return;
 }
@@ -50,20 +64,57 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     int deltaZ = 0, deltaX = 0, deltaY = 0;
-
+    
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     CGPoint currentTouch = [touch locationInView:touch.view];
     CGPoint previousTouch = [touch previousLocationInView:touch.view];
     
-    ///GROS BUG  DE REPERE !! Normalement X et getVertical !!
-    if (currentTouch.y < ([[touch view] frame].size.height)/4 ) {
-        deltaZ = getHorizontalDelta(currentTouch, previousTouch);
+    switch ([[touches allObjects] count]) {
+        case 1:
+            {
+                //Right Hand moved
+                if([[touches allObjects] objectAtIndex:0] == rightHand){
+                    NSLog(@"Right Hand Moved");
+                    deltaY = getVerticalDelta(previousTouch, currentTouch);
+                    deltaX = getHorizontalDelta(previousTouch, currentTouch);
+                }else if([[touches allObjects] objectAtIndex:0] == leftHand){
+                    NSLog(@"Left Hand Moved");
+                    deltaZ = getHorizontalDelta(currentTouch, previousTouch);
+                }
+            }
+            break;
         
-    }else{
-        deltaY = getVerticalDelta(previousTouch, currentTouch);
-        deltaX = getHorizontalDelta(previousTouch, currentTouch);
-    }
+        
+        case 2:
+            NSLog(@"Both Hand Moved");
+            //Right hand
+            if([[touches allObjects] objectAtIndex:0] == rightHand){
+                deltaY = getVerticalDelta(previousTouch, currentTouch);
+                deltaX = getHorizontalDelta(previousTouch, currentTouch);
+                
+                //Reused for the second hand, the left one in this case
+                touch = [[touches allObjects] objectAtIndex:1];
+                currentTouch = [touch locationInView:touch.view];
+                previousTouch = [touch previousLocationInView:touch.view];
+                
+                deltaZ = getHorizontalDelta(currentTouch, previousTouch);
+                
+                
+            }else{
+                deltaZ = getHorizontalDelta(currentTouch, previousTouch);
+                
+                //Reused for the second hand, the left one in this case
+                touch = [[touches allObjects] objectAtIndex:1];
+                currentTouch = [touch locationInView:touch.view];
+                previousTouch = [touch previousLocationInView:touch.view];
+                
+                
+                deltaY = getVerticalDelta(previousTouch, currentTouch);
+                deltaX = getHorizontalDelta(previousTouch, currentTouch);
+            }
+            break;
 
+    }
     [[self observatedViewController] translateObjectWithDeltaX:deltaX andDeltaY:deltaY andDeltaZ:deltaZ*2];
 }
 
@@ -71,6 +122,8 @@
 
     self.fingersOnScreen -= [touches count];
     if( [self fingersOnScreen] == 0 ) [[self observatedViewController] touchesEnded];
+    leftHand = NULL;
+    rightHand = NULL;
 }
 
 
